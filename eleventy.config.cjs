@@ -27,6 +27,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("dateIso", (dateObj) => {
     const date = new Date(dateObj);
+    if (Number.isNaN(date.getTime())) {
+      return new Date().toISOString();
+    }
     return date.toISOString();
   });
 
@@ -47,6 +50,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    templateFormats: ["md", "njk", "html", "liquid", "11ty.js", "xml"],
     dir: {
       input: ".",
       includes: "_includes",
