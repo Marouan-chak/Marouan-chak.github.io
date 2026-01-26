@@ -5,7 +5,7 @@ date: 2026-01-26
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 10
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-10-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-10-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -63,7 +63,7 @@ And produces:
 - **Helm releases** (cert-manager, ingress-nginx, monitoring)
 - **Workload Identity** bindings
 
-![High level architecture of a production multi cloud Kubernetes platform built using Crossplane Python composition functions](/blog/crossplane-python-blog-posts/images/diagrams/part-10-platform-architecture.png)
+![High level architecture of a production multi cloud Kubernetes platform built using Crossplane Python composition functions](/blog/crossplane-python-blog-posts/images/diagrams/part-10-platform-architecture.webp)
 
 ## Project Structure
 

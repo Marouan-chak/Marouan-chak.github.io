@@ -5,7 +5,7 @@ date: 2026-01-25
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 9
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-09-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-09-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -72,7 +72,7 @@ deletionPolicy: Delete
 
 ## Import Workflow Overview
 
-![Sequence diagram showing safe adoption of existing cloud resources using Crossplane import and observe workflows](/blog/crossplane-python-blog-posts/images/diagrams/part-09-import-workflow.png)
+![Sequence diagram showing safe adoption of existing cloud resources using Crossplane import and observe workflows](/blog/crossplane-python-blog-posts/images/diagrams/part-09-import-workflow.webp)
 
 1. **Observe mode** - Crossplane reads state, makes no changes
 2. **Manage mode** - Crossplane takes control, orphans on delete

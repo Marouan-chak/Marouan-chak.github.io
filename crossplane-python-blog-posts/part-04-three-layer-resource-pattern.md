@@ -5,7 +5,7 @@ date: 2026-01-20
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 4
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-04-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-04-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -78,7 +78,7 @@ This approach has problems:
 
 The 3-layer pattern separates **what** you want from **how** each cloud implements it.
 
-![Architecture diagram of the three layer Crossplane platform pattern separating interface, logic, and cloud implementation](/blog/crossplane-python-blog-posts/images/diagrams/part-04-three-layer.png)
+![Architecture diagram of the three layer Crossplane platform pattern separating interface, logic, and cloud implementation](/blog/crossplane-python-blog-posts/images/diagrams/part-04-three-layer.webp)
 
 ### Layer 1: Function Call (Composition Entrypoint)
 

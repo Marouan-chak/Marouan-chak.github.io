@@ -5,7 +5,7 @@ date: 2026-01-23
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 7
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-07-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-07-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -62,7 +62,7 @@ Problems:
 
 Jinja2 is Python's most popular templating engine. It lets you write templates that reference variables at render time.
 
-![Diagram showing dynamic Helm values generation using Jinja2 templating inside a Crossplane Python function](/blog/crossplane-python-blog-posts/images/diagrams/part-07-jinja2-pipeline.png)
+![Diagram showing dynamic Helm values generation using Jinja2 templating inside a Crossplane Python function](/blog/crossplane-python-blog-posts/images/diagrams/part-07-jinja2-pipeline.webp)
 
 ### Basic Jinja2 Example
 

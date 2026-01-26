@@ -5,7 +5,7 @@ date: 2026-01-22
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 6
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-06-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-06-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -105,7 +105,7 @@ def deploy_cluster(c: Composition):
 
 EnvironmentConfigs are selected based on label matching in your composition definition.
 
-![Flow diagram of environment configuration resolution in Crossplane using EnvironmentConfigs and composition functions](/blog/crossplane-python-blog-posts/images/diagrams/part-06-envconfig-flow.png)
+![Flow diagram of environment configuration resolution in Crossplane using EnvironmentConfigs and composition functions](/blog/crossplane-python-blog-posts/images/diagrams/part-06-envconfig-flow.webp)
 
 ### Composition Environment Selector
 

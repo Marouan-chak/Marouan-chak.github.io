@@ -5,7 +5,7 @@ date: 2026-01-21
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 5
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-05-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-05-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -263,7 +263,7 @@ def add_definition(definition: dict | str, *args, **r: Unpack[ResourceDict]):
 
 Let's trace a complete call:
 
-![Diagram showing dynamic generation of multiple managed resources from user input using Python logic](/blog/crossplane-python-blog-posts/images/diagrams/part-05-introspection-flow.png)
+![Diagram showing dynamic generation of multiple managed resources from user input using Python logic](/blog/crossplane-python-blog-posts/images/diagrams/part-05-introspection-flow.webp)
 
 ### 1. User Calls add_bucket
 

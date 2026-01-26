@@ -5,7 +5,7 @@ date: 2026-01-19
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 3
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-03-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-03-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -44,7 +44,7 @@ message RunFunctionRequest {
 
 Let's examine each field:
 
-![Diagram of Crossplane composition function input and output structures including observed and desired resource state](/blog/crossplane-python-blog-posts/images/diagrams/part-03-io-structure.png)
+![Diagram of Crossplane composition function input and output structures including observed and desired resource state](/blog/crossplane-python-blog-posts/images/diagrams/part-03-io-structure.webp)
 
 ### 1. meta: Request Metadata
 

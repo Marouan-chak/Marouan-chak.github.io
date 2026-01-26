@@ -6,8 +6,10 @@
   <title>{{ title }} | {{ site.name }}</title>
   <meta name="description" content="{{ description | escape }}">
   <meta name="author" content="{{ site.author }}">
-  <meta name="theme-color" content="#0b0e14">
+  <meta name="theme-color" content="#06080d">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="stylesheet" href="/blog/assets/blog.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,10 +35,19 @@
     </section>
 
     <section class="listing">
-      <article class="listing-item">
-        <h2>Crossplane Python Functions</h2>
-        <p>Ten-part series on building production-grade Crossplane composition functions in Python.</p>
-        <a href="/blog/crossplane-python-blog-posts/">View the series →</a>
+      <article class="listing-item series-listing-item">
+        <div class="listing-item-image">
+          <span class="listing-item-badge">10 Parts</span>
+          <img src="/blog/crossplane-python-blog-posts/images/covers/part-01-cover.webp" alt="Crossplane Python Functions Series" loading="lazy">
+        </div>
+        <div class="listing-item-content">
+          <h2>Crossplane Python Functions</h2>
+          <p>A ten-part series on building production-grade Crossplane composition functions in Python. Learn to create reusable infrastructure abstractions with real-world patterns.</p>
+          <a href="/blog/crossplane-python-blog-posts/" class="listing-item-link">
+            View the series
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
       </article>
     </section>
 

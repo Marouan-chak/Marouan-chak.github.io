@@ -5,7 +5,7 @@ date: 2026-01-24
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 8
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-08-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-08-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -36,7 +36,7 @@ A complete pipeline that:
 5. **Creates Crossplane packages** (.xpkg files)
 6. **Supports semantic versioning** with Git tags
 
-![CI and CD pipeline diagram for testing and deploying Crossplane Python composition functions](/blog/crossplane-python-blog-posts/images/diagrams/part-08-cicd-pipeline.png)
+![CI and CD pipeline diagram for testing and deploying Crossplane Python composition functions](/blog/crossplane-python-blog-posts/images/diagrams/part-08-cicd-pipeline.webp)
 
 ## Repository Structure
 
@@ -636,10 +636,10 @@ env:
 Add to README.md:
 
 ```markdown
-![Build Status](https://github.com/Marouan-chak/function-myplatform/workflows/CI/badge.svg)
+![CI build status badge for function-myplatform](https://github.com/Marouan-chak/function-myplatform/workflows/CI/badge.svg)
 ```
 
-![Screenshot of GitHub Actions workflow run](/blog/crossplane-python-blog-posts/images/screenshots/part-08-github-actions.png)
+![Screenshot of GitHub Actions CI workflow run for function-myplatform](/blog/crossplane-python-blog-posts/images/screenshots/part-08-github-actions.png)
 
 ## Key Takeaways
 

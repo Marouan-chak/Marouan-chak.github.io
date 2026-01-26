@@ -5,7 +5,7 @@ date: 2026-01-18
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 2
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-02-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-02-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -149,7 +149,7 @@ class FunctionRunner(FunctionRunnerServiceServicer):
 
 **4. `response.to(req)`**: A helper that initializes a response from a request, copying over the existing desired state.
 
-![Flow diagram showing how a Crossplane Python function receives a claim and produces managed resources during reconciliation](/blog/crossplane-python-blog-posts/images/diagrams/part-02-function-lifecycle.png)
+![Flow diagram showing how a Crossplane Python function receives a claim and produces managed resources during reconciliation](/blog/crossplane-python-blog-posts/images/diagrams/part-02-function-lifecycle.webp)
 
 ## Writing Your First Function
 

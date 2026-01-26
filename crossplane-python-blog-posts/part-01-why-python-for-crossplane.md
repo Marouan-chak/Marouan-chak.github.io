@@ -5,7 +5,7 @@ date: 2026-01-17
 series: "crossplane-python-blog-posts"
 series_title: "Crossplane Python Functions"
 part: 1
-cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-01-cover.png"
+cover_image: "/blog/crossplane-python-blog-posts/images/covers/part-01-cover.webp"
 tags:
   - blog
   - crossplane-python-blog-posts
@@ -60,7 +60,7 @@ This works for simple cases. But compositions quickly become unwieldy when you n
 
 The patch-and-transform model forces you to encode programming logic in YAML. The result is compositions that are hard to read, harder to test, and nearly impossible to debug.
 
-![Diagram comparing YAML patch-based Crossplane compositions with Python composition functions generating managed resources](/blog/crossplane-python-blog-posts/images/diagrams/part-01-yaml-vs-python.png)
+![Diagram comparing YAML patch-based Crossplane compositions with Python composition functions generating managed resources](/blog/crossplane-python-blog-posts/images/diagrams/part-01-yaml-vs-python.webp)
 
 ### Phase 2: Composition Functions (The Polyglot Era)
 
