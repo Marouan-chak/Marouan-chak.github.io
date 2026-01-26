@@ -8,11 +8,10 @@ Visit: [marouan-chak.github.io](https://marouan-chak.github.io)
 
 ## ✨ Features
 
-- **Dark Tech Aesthetic** - Terminal-inspired design with animated grid background
-- **Fully Responsive** - Optimized for all device sizes
-- **Performance First** - Pure HTML/CSS/JS, no frameworks required
-- **Scroll Animations** - Smooth intersection observer animations
-- **Accessible** - Semantic HTML and keyboard navigation
+- **Consulting-first CTA** - Primary inquiry flow for consulting leads
+- **SEO Ready** - Canonical URLs, social cards, and structured data
+- **EU-friendly Analytics** - Umami integration without a cookie banner
+- **Fast Blog** - Eleventy-generated markdown blog with RSS
 
 ## 🛠️ Stack
 
@@ -20,24 +19,35 @@ Visit: [marouan-chak.github.io](https://marouan-chak.github.io)
 - CSS3 (Custom Properties, Grid, Flexbox)
 - Vanilla JavaScript
 - Google Fonts (JetBrains Mono, Space Grotesk, Outfit)
+- Eleventy (blog generator)
 
 ## 📦 Deployment
 
-This site is automatically deployed via GitHub Pages. Simply push to `main` branch.
+This site is automatically built and deployed via GitHub Pages (Actions). Simply push to `main` branch.
 
 ```bash
 git clone https://github.com/Marouan-chak/Marouan-chak.github.io.git
 cd Marouan-chak.github.io
-# Open index.html in browser
+npm install
+npm run dev
 ```
 
 ## 🔧 Customization
 
 Edit `index.html` to update:
-- Personal information in the hero section
-- Skills and technologies
-- Project descriptions and links
-- Contact information
+- Hero copy, services, and CTA links
+- Experience and project content
+- Contact details and response time
+
+Blog posts live in:
+- `crossplane-python-blog-posts/`
+
+Resume PDF:
+- `Marouan_Chakran_Resume.pdf` (linked from the site)
+
+## 📈 Analytics
+
+This site uses Umami. Update the script tag in `index.html` with your website ID if needed.
 
 ## 📄 License
 

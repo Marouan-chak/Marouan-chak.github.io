@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.name }}</title>
+  <meta name="description" content="{{ description | escape }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/blog/assets/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ title | escape }}">
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if cover_image %}
+  <meta property="og:image" content="{{ site.url }}{{ cover_image }}">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title | escape }}">
+  <meta name="twitter:description" content="{{ description | escape }}">
+  {% if cover_image %}
+  <meta name="twitter:image" content="{{ site.url }}{{ cover_image }}">
+  {% endif %}
+
+  {% if page.date %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ title | escape }}",
+      "description": "{{ description | escape }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author }}"
+      },
+      "datePublished": "{{ page.date | dateIso }}",
+      "url": "{{ site.url }}{{ page.url }}"
+      {% if cover_image %},
+      "image": "{{ site.url }}{{ cover_image }}"
+      {% endif %}
+    }
+  </script>
+  {% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="container inner">
+      <a class="site-logo" href="/">marouan.net</a>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="{{ site.social.github }}">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">{{ series_title }}</div>
+      <h1>{{ title }}</h1>
+      <p>{{ description }}</p>
+    </section>
+
+    <article class="post-shell">
+      <div class="post-meta">
+        {% if part %}<span>Part {{ part }}</span>{% endif %}
+        {% if page.date %}<span>{{ page.date | readableDate }}</span>{% endif %}
+      </div>
+
+      {% if cover_image %}
+      <div class="post-cover">
+        <img src="{{ cover_image }}" alt="Cover image for {{ title | escape }}">
+      </div>
+      {% endif %}
+
+      <div class="post-content">
+        {{ content | safe }}
+      </div>
+
+      {% set series = collections.crossplanePythonSeries %}
+      {% set index = series | findIndexByUrl(page.url) %}
+      {% if index != -1 %}
+      <div class="series-nav">
+        {% if index > 0 %}
+        <a class="series-card" href="{{ series[index - 1].url }}">
+          <span>Previous</span>
+          <strong>{{ series[index - 1].data.title }}</strong>
+        </a>
+        {% endif %}
+        {% if index + 1 < series.length %}
+        <a class="series-card" href="{{ series[index + 1].url }}">
+          <span>Next</span>
+          <strong>{{ series[index + 1].data.title }}</strong>
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </article>
+
+    <div class="footer">© {{ site.name }}</div>
+  </main>
+</body>
+</html>

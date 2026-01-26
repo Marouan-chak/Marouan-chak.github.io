@@ -1,0 +1,6 @@
+_site
+node_modules
+README.md
+crossplane-python-blog-posts/README.md
+crossplane-python-blog-posts/LICENSE
+crossplane-python-blog-posts/design-strategy.md

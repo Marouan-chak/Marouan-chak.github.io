@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marouan Chakran | Platform Engineer</title>
-    <meta name="description" content="Marouan Chakran - Senior Platform Engineer & SRE specializing in Kubernetes, Crossplane, and Internal Developer Platforms. CKA Certified.">
-    <meta name="keywords" content="Platform Engineer, SRE, Site Reliability Engineer, Kubernetes, DevOps, Crossplane, IDP, Internal Developer Platform, CKA, Cloud Infrastructure">
+    <title>Marouan Chakran | Platform Engineering Consultant</title>
+    <meta name="description" content="Platform engineering consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
     <meta name="author" content="Marouan Chakran">
+    <meta name="theme-color" content="#0a0a0f">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://marouan.net/">
+    <link rel="canonical" href="https://marouan.net">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://marouan.net/">
-    <meta property="og:title" content="Marouan Chakran | Platform Engineer">
-    <meta property="og:description" content="Marouan Chakran - Senior Platform Engineer & SRE specializing in Kubernetes, Crossplane, and Internal Developer Platforms. CKA Certified.">
-    <meta property="og:image" content="https://marouan.net/og-image.png">
+    <meta property="og:url" content="https://marouan.net">
+    <meta property="og:title" content="Marouan Chakran | Platform Engineering Consultant">
+    <meta property="og:description" content="Platform engineering consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
+    <meta property="og:image" content="https://marouan.net/assets/og-image.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://marouan.net/">
-    <meta name="twitter:title" content="Marouan Chakran | Platform Engineer">
-    <meta name="twitter:description" content="Marouan Chakran - Senior Platform Engineer & SRE specializing in Kubernetes, Crossplane, and Internal Developer Platforms. CKA Certified.">
-    <meta name="twitter:image" content="https://marouan.net/og-image.png">
+    <meta name="twitter:url" content="https://marouan.net">
+    <meta name="twitter:title" content="Marouan Chakran | Platform Engineering Consultant">
+    <meta name="twitter:description" content="Platform engineering consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
+    <meta name="twitter:image" content="https://marouan.net/assets/og-image.png">
     
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
@@ -32,13 +32,23 @@
         "@type": "Person",
         "name": "Marouan Chakran",
         "url": "https://marouan.net",
-        "jobTitle": "Senior Platform Engineer",
-        "description": "CKA-certified Platform Engineer specializing in Kubernetes, Crossplane, and Internal Developer Platforms",
+        "email": "contact@marouan.net",
+        "image": "https://marouan.net/assets/og-image.png",
+        "jobTitle": "Platform Engineering Consultant",
+        "description": "Platform engineering consultant specializing in Kubernetes, Crossplane, GitOps, and SRE practices. Helping teams build reliable internal platforms and improve delivery workflows.",
+        "knowsAbout": [
+            "Kubernetes",
+            "Crossplane",
+            "Platform Engineering",
+            "Site Reliability Engineering",
+            "GitOps",
+            "Cloud Native",
+            "Infrastructure as Code"
+        ],
         "sameAs": [
             "https://github.com/Marouan-chak",
             "https://www.linkedin.com/in/marouan-chakran"
         ],
-        "knowsAbout": ["Kubernetes", "Crossplane", "Platform Engineering", "DevOps", "SRE", "GitOps", "Cloud Infrastructure"],
         "alumniOf": {
             "@type": "CollegeOrUniversity",
             "name": "Sorbonne Paris-Nord"
@@ -46,7 +56,11 @@
         "hasCredential": {
             "@type": "EducationalOccupationalCredential",
             "name": "Certified Kubernetes Administrator (CKA)",
-            "credentialCategory": "Professional Certification"
+            "credentialCategory": "Professional Certification",
+            "recognizedBy": {
+                "@type": "Organization",
+                "name": "The Linux Foundation"
+            }
         }
     }
     </script>
@@ -62,6 +76,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="9c455a07-2f60-4e14-83a7-c00ec60369a7"></script>
     <style>
         :root {
             --bg-primary: #0a0a0f;
@@ -87,6 +102,7 @@
 
         html {
             scroll-behavior: smooth;
+            color-scheme: dark;
         }
 
         body {
@@ -95,6 +111,27 @@
             color: var(--text-primary);
             line-height: 1.7;
             overflow-x: hidden;
+            -webkit-tap-highlight-color: rgba(0, 212, 255, 0.15);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            padding: 10px 14px;
+            background: var(--accent-cyan);
+            color: var(--bg-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transform: translateY(-150%);
+            transition: transform 0.2s ease;
+            z-index: 200;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
         }
 
         /* Animated background grid */
@@ -186,6 +223,8 @@
             text-decoration: none;
             transition: color 0.3s ease;
             position: relative;
+            padding: 6px 0;
+            touch-action: manipulation;
         }
 
         .nav-links a:hover {
@@ -205,6 +244,46 @@
 
         .nav-links a:hover::after {
             width: 100%;
+        }
+
+        .nav-cta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            background: var(--gradient-1);
+            color: var(--bg-primary);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            touch-action: manipulation;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+        }
+
+        .nav-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            touch-action: manipulation;
+        }
+
+        .nav-toggle:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-1px);
         }
 
         /* Hero Section */
@@ -273,6 +352,7 @@
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 24px;
+            text-wrap: balance;
         }
 
         .hero h1 .gradient-text {
@@ -301,6 +381,29 @@
             color: var(--text-secondary);
             margin-bottom: 32px;
             max-width: 500px;
+        }
+
+        .hero-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .hero-highlight {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            padding: 6px 14px;
+            transition: all 0.3s ease;
+        }
+
+        .hero-highlight:hover {
+            border-color: rgba(0, 212, 255, 0.3);
+            color: var(--text-primary);
         }
 
         .hero-cta {
@@ -423,6 +526,11 @@
         /* Tech Stack Section */
         .section {
             padding: 120px 0;
+            scroll-margin-top: 120px;
+        }
+
+        .section-compact {
+            padding: 96px 0;
         }
 
         .section-header {
@@ -443,6 +551,190 @@
             font-family: 'Space Grotesk', sans-serif;
             font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 700;
+            text-wrap: balance;
+        }
+
+        .section-intro {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 720px;
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+        .services-list {
+            list-style: none;
+            max-width: 720px;
+            margin: 0 auto 40px;
+            padding: 0;
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .services-list li {
+            position: relative;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px 24px 20px 20px;
+            padding-left: 44px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .services-list li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient-1);
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .services-list li::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-cyan);
+            box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+        }
+
+        .services-list li:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+
+        .services-list li:hover::before {
+            opacity: 1;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .work-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .work-card:hover {
+            border-color: rgba(0, 212, 255, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .work-card:hover::before {
+            opacity: 1;
+        }
+
+        .work-step {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .work-card:hover .work-step {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: var(--accent-cyan);
+        }
+
+        .work-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .work-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .blog-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.3s ease;
+        }
+
+        .blog-card span {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .blog-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .blog-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+
+        .blog-card a {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .blog-card:hover {
+            border-color: rgba(0, 212, 255, 0.3);
+            transform: translateY(-4px);
         }
 
         /* Skills Grid */
@@ -583,14 +875,16 @@
             font-size: 0.85rem;
             color: var(--accent-cyan);
             text-decoration: none;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 6px;
             transition: all 0.3s ease;
+            padding: 4px 0;
         }
 
         .project-link:hover {
             color: var(--text-primary);
+            gap: 10px;
         }
 
         .project-visual {
@@ -715,11 +1009,15 @@
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
             border: 1px solid var(--border-color);
             border-radius: 16px;
-            padding: 40px;
+            padding: 40px 32px;
             text-align: center;
-            max-width: 400px;
-            margin: 0 auto;
             position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(16, 185, 129, 0.3);
         }
 
         .education-icon {
@@ -757,7 +1055,7 @@
         /* Certifications */
         .certs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 24px;
             max-width: 700px;
             margin: 0 auto;
@@ -767,11 +1065,15 @@
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
             border: 1px solid var(--border-color);
             border-radius: 16px;
-            padding: 40px;
+            padding: 40px 32px;
             text-align: center;
-            max-width: 400px;
-            margin: 0 auto;
             position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 212, 255, 0.3);
         }
 
         .cert-badge {
@@ -849,6 +1151,125 @@
             fill: currentColor;
         }
 
+        /* Contact Form */
+        .contact-form {
+            max-width: 560px;
+            margin: 40px auto 0;
+            text-align: left;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-label {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-label .optional {
+            color: var(--text-muted);
+            font-size: 0.7rem;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239ca3af' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+        }
+
+        .form-select option {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px 32px;
+            background: var(--gradient-1);
+            border: none;
+            border-radius: 8px;
+            color: var(--bg-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+        }
+
+        /* Honeypot spam protection - hidden field */
+        .form-honeypot {
+            position: absolute;
+            left: -9999px;
+        }
+
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Footer */
         footer {
             padding: 40px 0;
@@ -887,6 +1308,57 @@
 
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 68px;
+                right: 24px;
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-color);
+                border-radius: 12px;
+                padding: 16px 18px;
+                flex-direction: column;
+                gap: 16px;
+                min-width: 200px;
+            }
+
+            nav.is-open .nav-links {
+                display: flex;
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .nav-toggle {
+                display: inline-flex;
+            }
+
+            .certs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        .btn:focus-visible,
+        .contact-link:focus-visible,
+        .project-link:focus-visible,
+        .nav-toggle:focus-visible {
+            outline: 2px solid var(--accent-cyan);
+            outline-offset: 4px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                animation: none !important;
+                transition-duration: 0.01ms !important;
             }
         }
 
@@ -918,48 +1390,50 @@
 <body>
     <div class="grid-bg"></div>
     <div class="noise-overlay"></div>
-
+    <a href="#main" class="skip-link">Skip to content</a>
     <nav>
         <div class="container">
-            <a href="#" class="logo">marouan.net</a>
-            <ul class="nav-links">
-                <li><a href="#skills">Skills</a></li>
+            <a href="#main" class="logo">marouan.net</a>
+            <ul class="nav-links" id="site-nav">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-i-work">How I work</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="/blog/">Blog</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
+            <a class="nav-cta" href="#contact">Discuss a project</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                ☰
+            </button>
         </div>
     </nav>
 
+    <main id="main">
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">Available for collaboration</div>
+                    <div class="hero-badge">Available for consulting</div>
                     <h1>
                         <span class="hero-name">Marouan Chakran</span>
-                        <span class="hero-tagline">Building the <span class="gradient-text">Platform</span><br>
-                        that builds platforms</span>
+                        <span class="hero-tagline">Platform Engineering Consultant,<br><span class="gradient-text">Kubernetes, Crossplane, SRE</span></span>
                     </h1>
                     <p class="hero-description">
-                        CKA-certified Platform Engineer with 5+ years of experience architecting 
-                        Internal Developer Platforms, automating multi-cloud infrastructure, and 
-                        designing high-availability distributed systems. Passionate about GitOps 
-                        maturity and operational excellence.
+                        I help teams adopt Kubernetes and cloud native platforms through platform engineering, Crossplane based infrastructure automation, GitOps workflows, and SRE practices. Remote, worldwide.
                     </p>
+                    <div class="hero-highlights">
+                        <span class="hero-highlight">Remote, worldwide</span>
+                        <span class="hero-highlight">Kubernetes + Crossplane</span>
+                        <span class="hero-highlight">SRE and reliability</span>
+                    </div>
                     <div class="hero-cta">
-                        <a href="https://github.com/Marouan-chak" class="btn btn-primary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            View GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/marouan-chakran" class="btn btn-secondary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            LinkedIn
+                        <a href="#contact" class="btn btn-primary">
+                            Discuss a project
                         </a>
                         <a href="Marouan_Chakran_Resume.pdf" download class="btn btn-secondary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                            Resume
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            Download resume
                         </a>
                     </div>
                 </div>
@@ -969,7 +1443,7 @@
                         <span class="terminal-dot red"></span>
                         <span class="terminal-dot yellow"></span>
                         <span class="terminal-dot green"></span>
-                        <span class="terminal-title">marouan@platform ~ kubectl whoami</span>
+                        <span class="terminal-title">marouan@consulting ~ kubectl whoami</span>
                     </div>
                     <div class="terminal-body">
                         <div class="terminal-line">
@@ -981,11 +1455,10 @@
                             <span class="terminal-key">kind:</span> <span class="terminal-string">PlatformEngineer</span><br>
                             <span class="terminal-key">metadata:</span><br>
                             &nbsp;&nbsp;<span class="terminal-key">name:</span> <span class="terminal-value">marouan-chakran</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">location:</span> <span class="terminal-value">France</span><br>
+                            &nbsp;&nbsp;<span class="terminal-key">location:</span> <span class="terminal-value">Remote, worldwide</span><br>
                             <span class="terminal-key">spec:</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">role:</span> <span class="terminal-string">"Sr. Platform Engineer & SRE"</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">company:</span> <span class="terminal-string">"InstaDeep/BioNTech"</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">certified:</span> <span class="terminal-value">[CKA]</span><br>
+                            &nbsp;&nbsp;<span class="terminal-key">role:</span> <span class="terminal-string">"Platform Engineering Consultant"</span><br>
+                            &nbsp;&nbsp;<span class="terminal-key">focus:</span> <span class="terminal-string">"Kubernetes, Crossplane, SRE"</span><br>
                             &nbsp;&nbsp;<span class="terminal-key">status:</span> <span class="terminal-value">Ready</span>
                         </div>
                     </div>
@@ -994,105 +1467,50 @@
         </div>
     </section>
 
-    <section class="section" id="skills">
+    <section class="section section-compact" id="services">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">// Tech Stack</div>
-                <h2 class="section-title">Platform Engineering Expertise</h2>
+                <div class="section-label">// Services</div>
+                <h2 class="section-title">Services</h2>
             </div>
 
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">☸️</div>
-                    <h3>Kubernetes & Orchestration</h3>
-                    <p>Deep expertise in Kubernetes operations, custom controllers, and operator patterns for production workloads at scale.</p>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Helm</span>
-                        <span class="skill-tag">Kustomize</span>
-                        <span class="skill-tag">Rancher</span>
-                        <span class="skill-tag">Istio</span>
-                        <span class="skill-tag">Linkerd</span>
-                    </div>
-                </div>
+            <p class="section-intro">Engagements typically focus on one of the following areas.</p>
+            <ul class="services-list">
+                <li>Platform build and internal developer platforms</li>
+                <li>Crossplane adoption, compositions, providers, and operating model</li>
+                <li>Bare metal to cloud migration, architecture and execution</li>
+                <li>Containerization and cloud native adoption, delivery and runtime patterns</li>
+                <li>Kubernetes adoption, cluster design, governance, security, and reliability foundations</li>
+            </ul>
+        </div>
+    </section>
 
-                <div class="skill-card">
-                    <div class="skill-icon">🔧</div>
-                    <h3>Crossplane & IaC</h3>
-                    <p>Building universal control planes with Crossplane compositions and custom providers. Infrastructure as code at the Kubernetes level.</p>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Crossplane</span>
-                        <span class="skill-tag">Compositions</span>
-                        <span class="skill-tag">Providers</span>
-                        <span class="skill-tag">Terraform</span>
-                    </div>
+    <section class="section section-compact" id="how-i-work">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// Engagement Flow</div>
+                <h2 class="section-title">How I work</h2>
+            </div>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-step">1</div>
+                    <h3>Discovery</h3>
+                    <p>Short call and review of current stack, constraints, and desired outcomes.</p>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🚀</div>
-                    <h3>GitOps & CI/CD</h3>
-                    <p>Implementing declarative infrastructure workflows with FluxCD and ArgoCD. Continuous delivery for cloud-native applications.</p>
-                    <div class="skill-tags">
-                        <span class="skill-tag">FluxCD</span>
-                        <span class="skill-tag">ArgoCD</span>
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">GitOps</span>
-                    </div>
+                <div class="work-card">
+                    <div class="work-step">2</div>
+                    <h3>Design</h3>
+                    <p>Target architecture, delivery roadmap, risks, and trade-offs aligned to your teams.</p>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">☁️</div>
-                    <h3>Multi-Cloud Infrastructure</h3>
-                    <p>Managing infrastructure across GCP, AWS, Azure and on-premises with unified control planes and consistent abstractions.</p>
-                    <div class="skill-tags">
-                        <span class="skill-tag">GCP/GKE</span>
-                        <span class="skill-tag">AWS/EKS</span>
-                        <span class="skill-tag">Azure/AKS</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">VMware</span>
-                        <span class="skill-tag">Proxmox</span>
-                    </div>
+                <div class="work-card">
+                    <div class="work-step">3</div>
+                    <h3>Delivery</h3>
+                    <p>Implementation and productionization with documentation, runbooks, and handover prep.</p>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">📊</div>
-                    <h3>Observability & SRE</h3>
-                    <p>Building comprehensive monitoring stacks with the LGTM stack. Implementing SLIs/SLOs, error budgets, and toil reduction strategies.</p>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">Mimir</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">Loki</span>
-                        <span class="skill-tag">Tempo</span>
-                        <span class="skill-tag">OpenTelemetry</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🛡️</div>
-                    <h3>Platform Security</h3>
-                    <p>Implementing mTLS, Workload Identity, and zero-trust networking patterns for secure service communication.</p>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HashiCorp Vault</span>
-                        <span class="skill-tag">mTLS</span>
-                        <span class="skill-tag">Workload Identity</span>
-                        <span class="skill-tag">OIDC/OAuth</span>
-                        <span class="skill-tag">RBAC</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Development</h3>
-                    <p>Building custom tooling and operators to bridge infrastructure complexity with developer experience.</p>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Kopf</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Golang</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Next.js</span>
-                    </div>
+                <div class="work-card">
+                    <div class="work-step">4</div>
+                    <h3>Enablement</h3>
+                    <p>Training, enablement, and next-step planning so teams can operate independently.</p>
                 </div>
             </div>
         </div>
@@ -1110,17 +1528,17 @@
                     <div class="experience-header">
                         <div>
                             <h3 class="experience-title">Sr. Site Reliability Engineer</h3>
-                            <span class="experience-company">Instadeep LTD / BioNTech, Paris</span>
+                            <span class="experience-company">Instadeep LTD / BioNTech</span>
                         </div>
                         <span class="experience-date">Oct 2023 – Present</span>
                     </div>
-                    <p class="experience-description">Internal Developer Platform (IdP) Architect designing comprehensive platform ecosystems to unify infrastructure management across teams.</p>
+                    <p class="experience-description">Internal Developer Platform architect focused on platform reliability, delivery workflows, and infrastructure automation.</p>
                     <ul class="experience-highlights">
-                        <li>Built custom Python-based Crossplane function for dynamic multi-cloud composition (GKE, EKS, AKS)</li>
-                        <li>Developed Crossplane Provider for MaaS enabling bare-metal provisioning via unified control plane</li>
-                        <li>Architected centralized Flux CD GitOps control plane with multi-environment isolation</li>
-                        <li>Built full-stack platform dashboard (Next.js, FastAPI) with cost-allocation integration</li>
-                        <li>Engineered multi-tenant observability stack (Mimir, Loki, Grafana) with mTLS security</li>
+                        <li>Designed and operated multi cloud Kubernetes foundations supporting multiple teams</li>
+                        <li>Standardized infrastructure and application delivery using GitOps workflows</li>
+                        <li>Built Crossplane abstractions to reduce cognitive load and improve consistency</li>
+                        <li>Delivered platform tooling to improve self-service and operational visibility</li>
+                        <li>Improved reliability through SLO oriented operations and incident readiness</li>
                     </ul>
                 </div>
 
@@ -1128,15 +1546,15 @@
                     <div class="experience-header">
                         <div>
                             <h3 class="experience-title">DevOps Engineer</h3>
-                            <span class="experience-company">Blocs & Compagnie, Paris</span>
+                            <span class="experience-company">Blocs & Compagnie</span>
                         </div>
                         <span class="experience-date">May 2022 – Oct 2023</span>
                     </div>
-                    <p class="experience-description">Built observability platforms and managed multi-cloud Kubernetes infrastructure for Web3 solutions.</p>
+                    <p class="experience-description">Built observability platforms and operated multi-cloud Kubernetes infrastructure for production workloads.</p>
                     <ul class="experience-highlights">
-                        <li>Built comprehensive observability platform using LGTM stack (Loki, Grafana, Tempo, Mimir)</li>
-                        <li>Implemented HashiCorp Vault for centralized secrets management</li>
-                        <li>Operated clusters across AWS EKS, Azure AKS, and OVH with GitLab CI/CD automation</li>
+                        <li>Established metrics, logs, and traces platform with consistent dashboards and alerts</li>
+                        <li>Implemented secrets management workflows and access controls with Vault</li>
+                        <li>Operated Kubernetes delivery pipelines across cloud providers with CI/CD automation</li>
                     </ul>
                 </div>
 
@@ -1144,15 +1562,15 @@
                     <div class="experience-header">
                         <div>
                             <h3 class="experience-title">Kubernetes Expert & Technical Referent</h3>
-                            <span class="experience-company">Société Générale, Val de Fontenay</span>
+                            <span class="experience-company">Société Générale</span>
                         </div>
                         <span class="experience-date">Nov 2021 – May 2022</span>
                     </div>
-                    <p class="experience-description">Technical referent for Kubernetes infrastructure supporting critical financial services.</p>
+                    <p class="experience-description">Technical referent for Kubernetes foundations supporting critical financial services.</p>
                     <ul class="experience-highlights">
-                        <li>Maintained 20+ HA Kubernetes clusters for critical financial services</li>
-                        <li>Participated in 24/7 on-call rotations with standardized incident response</li>
-                        <li>Created detailed runbooks and post-mortem documentation</li>
+                        <li>Maintained production Kubernetes platforms with reliability and governance focus</li>
+                        <li>Established incident response practices and on-call readiness routines</li>
+                        <li>Created runbooks and post-incident reviews to improve operational maturity</li>
                     </ul>
                 </div>
 
@@ -1160,15 +1578,15 @@
                     <div class="experience-header">
                         <div>
                             <h3 class="experience-title">Deployment Engineer</h3>
-                            <span class="experience-company">Sagemcom, Rueil-Malmaison</span>
+                            <span class="experience-company">Sagemcom</span>
                         </div>
                         <span class="experience-date">Sep 2019 – Aug 2021</span>
                     </div>
                     <p class="experience-description">Led containerization initiatives and early GitOps adoption for legacy application modernization.</p>
                     <ul class="experience-highlights">
-                        <li>Led migration of legacy Java applications to containerized microservices</li>
-                        <li>Designed Helm charts and implemented early GitOps workflows with ArgoCD</li>
-                        <li>Managed on-premise infrastructure including VMware vSphere and Rook/Ceph storage</li>
+                        <li>Containerized legacy workloads and introduced modern delivery workflows</li>
+                        <li>Designed Helm packaging and GitOps release patterns with ArgoCD</li>
+                        <li>Managed on-prem infrastructure lifecycle and storage foundations</li>
                     </ul>
                 </div>
             </div>
@@ -1188,14 +1606,13 @@
                         <div class="project-badge">⬡ Crossplane Provider</div>
                         <h3>Provider MAAS</h3>
                         <p>
-                            A comprehensive Crossplane provider for Canonical MAAS (Metal as a Service). 
-                            Enables declarative bare-metal infrastructure management through Kubernetes-native resources. 
-                            Built with Python function compositions for maximum flexibility.
+                            <strong>Problem:</strong> Bare-metal provisioning needed the same declarative workflows as cloud resources.<br>
+                            <strong>Approach:</strong> Built a Crossplane provider and compositions to expose MAAS resources as Kubernetes APIs.<br>
+                            <strong>Result:</strong> Consistent infrastructure requests and reusable abstractions for platform teams.
                         </p>
                         <div class="project-links">
-                            <a href="https://github.com/Marouan-chak/provider-upjet-maas" class="project-link">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                View Repository →
+                            <a href="https://github.com/Marouan-chak/provider-upjet-maas" class="project-link" rel="noopener" target="_blank">
+                                View Provider MAAS on GitHub →
                             </a>
                         </div>
                     </div>
@@ -1205,16 +1622,15 @@
                 <div class="project-card">
                     <div class="project-info">
                         <div class="project-badge">◎ Internal Platform</div>
-                        <h3>IdP Control Plane</h3>
+                        <h3>Platform build blueprint</h3>
                         <p>
-                            Internal Developer Platform control plane built on Crossplane. 
-                            Provides self-service infrastructure provisioning through a unified API, 
-                            abstracting multi-cloud complexity for development teams.
+                            <strong>Problem:</strong> Teams needed self-service infrastructure with guardrails and consistent delivery.<br>
+                            <strong>Approach:</strong> Defined platform building blocks, GitOps governance, and Crossplane abstractions.<br>
+                            <strong>Result:</strong> Faster onboarding and repeatable platform patterns across environments.
                         </p>
                         <div class="project-links">
-                            <a href="https://github.com/Marouan-chak" class="project-link">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                View Profile →
+                            <a href="#contact" class="project-link">
+                                Discuss a platform build →
                             </a>
                         </div>
                     </div>
@@ -1223,23 +1639,55 @@
 
                 <div class="project-card">
                     <div class="project-info">
-                        <div class="project-badge">🏠 Home Lab</div>
-                        <h3>HA Kubernetes Homelab</h3>
+                        <div class="project-badge">📊 Observability</div>
+                        <h3>Multi tenant observability stack</h3>
                         <p>
-                            High-availability Kubernetes cluster running on Proxmox VE bare-metal servers. 
-                            Features Rook/Ceph distributed storage, ArgoCD GitOps pipelines, and Zero-Trust 
-                            network architecture using WireGuard, Netbird, and Tailscale.
+                            <strong>Problem:</strong> Teams needed observability with isolation, secure access, and consistent SLOs.<br>
+                            <strong>Approach:</strong> Designed tenant-aware telemetry pipelines with strong identity and mTLS.<br>
+                            <strong>Result:</strong> Reliable dashboards, trusted telemetry, and clear operational ownership.
                         </p>
                         <div class="project-links">
-                            <a href="https://github.com/Marouan-chak" class="project-link">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                View Profile →
+                            <a href="#contact" class="project-link">
+                                Discuss an observability roadmap →
                             </a>
                         </div>
                     </div>
-                    <div class="project-visual">🏠</div>
+                    <div class="project-visual">📊</div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-compact" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// Latest Writing</div>
+                <h2 class="section-title">Crossplane Python Functions</h2>
+                <p class="section-intro">Newest posts from the series. Read the full series on the blog.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <span>Part 10</span>
+                    <h3>Building a Production Multi-Cloud Cluster Platform</h3>
+                    <p>Putting the full platform together with everything learned in the series.</p>
+                    <a href="/blog/crossplane-python-blog-posts/part-10/">Read part 10 →</a>
+                </article>
+                <article class="blog-card">
+                    <span>Part 9</span>
+                    <h3>Importing Existing Infrastructure</h3>
+                    <p>Bring in existing resources and evolve toward declarative management.</p>
+                    <a href="/blog/crossplane-python-blog-posts/part-09/">Read part 9 →</a>
+                </article>
+                <article class="blog-card">
+                    <span>Part 8</span>
+                    <h3>Building CI/CD Pipelines for Functions</h3>
+                    <p>Automate testing and releases for Crossplane function development.</p>
+                    <a href="/blog/crossplane-python-blog-posts/part-08/">Read part 8 →</a>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 28px;">
+                <a href="/blog/crossplane-python-blog-posts/" class="btn btn-secondary">View full series</a>
             </div>
         </div>
     </section>
@@ -1257,14 +1705,14 @@
                     <h3 class="cert-title">Certified Kubernetes Administrator</h3>
                     <p class="cert-issuer">The Linux Foundation / CNCF</p>
                     <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">ID: LF-svrxqtbxri • Oct 2021</p>
-                    <a href="https://www.credly.com/badges/cka" class="cert-link">Verify Credential →</a>
+                    <a href="https://www.credly.com/badges/cka" class="cert-link" rel="noopener" target="_blank">Verify CKA on Credly →</a>
                 </div>
 
                 <div class="education-card">
                     <div class="education-icon">🎓</div>
                     <div class="education-info">
                         <h3>Computer Science Engineering</h3>
-                        <p>Sorbonne Paris-Nord, Villetaneuse</p>
+                        <p>Sorbonne Paris-Nord</p>
                         <p class="education-date">Sep 2017 – 2021</p>
                     </div>
                 </div>
@@ -1277,22 +1725,78 @@
             <div class="section-label">// Get in Touch</div>
             <h2 class="section-title">Let's Build Together</h2>
             <p style="color: var(--text-secondary); max-width: 500px; margin: 20px auto 0;">
-                Open to discussing platform engineering, Crossplane implementations, 
-                or interesting infrastructure challenges.
+                Happy to discuss platform engineering, Crossplane adoption, or infrastructure reliability challenges.
             </p>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 8px;">Typical response: 1-2 business days</p>
 
-            <div class="contact-links">
-                <a href="https://github.com/Marouan-chak" class="contact-link">
-                    <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <form class="contact-form" action="https://formspree.io/f/xzdddpqp" method="POST">
+                <!-- Honeypot field for spam protection -->
+                <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Work email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="company">Company</label>
+                        <input type="text" id="company" name="company" class="form-input" placeholder="Company name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="timezone">Time zone</label>
+                        <input type="text" id="timezone" name="timezone" class="form-input" placeholder="e.g. CET, PST, UTC+2">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="service">What do you need?</label>
+                    <select id="service" name="service" class="form-select" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Platform build">Platform build</option>
+                        <option value="Crossplane adoption">Crossplane adoption</option>
+                        <option value="Bare metal to cloud migration">Bare metal to cloud migration</option>
+                        <option value="Containerization and cloud native adoption">Containerization and cloud native adoption</option>
+                        <option value="Kubernetes adoption">Kubernetes adoption</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message">Short message</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project, current stack, and goals..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="budget">Budget range <span class="optional">(optional)</span></label>
+                    <select id="budget" name="budget" class="form-select">
+                        <option value="" disabled selected>Select a range</option>
+                        <option value="< €5k">&lt; €5k</option>
+                        <option value="€5k - €10k">€5k - €10k</option>
+                        <option value="€10k - €25k">€10k - €25k</option>
+                        <option value="€25k - €50k">€25k - €50k</option>
+                        <option value="> €50k">&gt; €50k</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="form-submit">Send inquiry</button>
+            </form>
+
+            <div class="contact-links" style="margin-top: 48px;">
+                <a href="https://github.com/Marouan-chak" class="contact-link" rel="noopener" target="_blank">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/marouan-chakran" class="contact-link">
-                    <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <a href="https://www.linkedin.com/in/marouan-chakran" class="contact-link" rel="noopener" target="_blank">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     LinkedIn
-                </a>
-                <a href="mailto:marouane.chakran@gmail.com" class="contact-link">
-                    <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
-                    Email
                 </a>
             </div>
         </div>
@@ -1303,6 +1807,7 @@
             <p>© <span class="copyright-year">2025</span> Marouan Chakran. Built with ☸️ and ❤️</p>
         </div>
     </footer>
+    </main>
 
     <script>
         // Intersection Observer for scroll animations
@@ -1320,12 +1825,24 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.skill-card, .project-card, .cert-card').forEach(el => {
+        document.querySelectorAll('.project-card, .cert-card, .work-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+
+        // Mobile nav toggle
+        const nav = document.querySelector('nav');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (nav && navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
 
         // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1337,6 +1854,10 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    if (nav && navToggle && nav.classList.contains('is-open')) {
+                        nav.classList.remove('is-open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
                 }
             });
         });

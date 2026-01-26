@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.name }}</title>
+  <meta name="description" content="{{ description | escape }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/blog/assets/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container inner">
+      <a class="site-logo" href="/">marouan.net</a>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="{{ site.social.github }}">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">Series</div>
+      <h1>{{ title }}</h1>
+      <p>{{ description }}</p>
+    </section>
+
+    <section class="listing">
+      {% set series = collections.crossplanePythonSeries %}
+      {% for post in series %}
+      <article class="listing-item">
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.data.description }}</p>
+        <a href="{{ post.url }}">Read Part {{ post.data.part }} →</a>
+      </article>
+      {% endfor %}
+    </section>
+
+    <div class="footer">© {{ site.name }}</div>
+  </main>
+</body>
+</html>
