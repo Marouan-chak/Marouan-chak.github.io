@@ -540,7 +540,7 @@ In Part 5, we'll dive deeper into the Python introspection magic behind `add_def
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 4 of 10** | Previous: [Understanding Function I/O](part-03-understanding-function-io.md) | Next: [Dynamic Provider Discovery](part-05-dynamic-provider-discovery.md)
+**Part 4 of 10** | Previous: [Understanding Function I/O](/blog/crossplane-python-blog-posts/part-03/) | Next: [Dynamic Provider Discovery](/blog/crossplane-python-blog-posts/part-05/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

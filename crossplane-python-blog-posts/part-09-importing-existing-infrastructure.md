@@ -649,7 +649,7 @@ In Part 10, we'll bring everything together in a production multi-cloud cluster 
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 9 of 10** | Previous: [CI/CD Pipelines](part-08-cicd-pipelines.md) | Next: [Production Multi-Cloud Platform](part-10-production-multi-cloud-platform.md)
+**Part 9 of 10** | Previous: [CI/CD Pipelines](/blog/crossplane-python-blog-posts/part-08/) | Next: [Production Multi-Cloud Platform](/blog/crossplane-python-blog-posts/part-10/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

@@ -541,7 +541,7 @@ In Part 3, we'll deep-dive into the function I/O structures. You'll learn exactl
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 2 of 10** | Previous: [Why Python for Crossplane?](part-01-why-python-for-crossplane.md) | Next: [Understanding Function I/O](part-03-understanding-function-io.md)
+**Part 2 of 10** | Previous: [Why Python for Crossplane?](/blog/crossplane-python-blog-posts/part-01/) | Next: [Understanding Function I/O](/blog/crossplane-python-blog-posts/part-03/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

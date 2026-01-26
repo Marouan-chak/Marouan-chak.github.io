@@ -731,7 +731,7 @@ In Part 7, we'll explore Jinja2 templating for Helm releases—how to dynamicall
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 6 of 10** | Previous: [Dynamic Provider Discovery](part-05-dynamic-provider-discovery.md) | Next: [Helm Templating with Jinja2](part-07-helm-templating-jinja2.md)
+**Part 6 of 10** | Previous: [Dynamic Provider Discovery](/blog/crossplane-python-blog-posts/part-05/) | Next: [Helm Templating with Jinja2](/blog/crossplane-python-blog-posts/part-07/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

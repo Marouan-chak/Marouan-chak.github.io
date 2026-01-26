@@ -570,7 +570,7 @@ In Part 6, we'll explore EnvironmentConfigs—how to manage configuration across
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 5 of 10** | Previous: [The 3-Layer Resource Pattern](part-04-three-layer-resource-pattern.md) | Next: [Configuration with EnvironmentConfigs](part-06-environment-configs.md)
+**Part 5 of 10** | Previous: [The 3-Layer Resource Pattern](/blog/crossplane-python-blog-posts/part-04/) | Next: [Configuration with EnvironmentConfigs](/blog/crossplane-python-blog-posts/part-06/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

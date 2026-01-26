@@ -242,7 +242,7 @@ In Part 2, we'll scaffold your first Python composition function, deploy it to a
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 1 of 10** | Next: [Your First Python Composition Function](part-02-your-first-python-function.md)
+**Part 1 of 10** | Next: [Your First Python Composition Function](/blog/crossplane-python-blog-posts/part-02/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

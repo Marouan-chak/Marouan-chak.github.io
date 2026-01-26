@@ -552,7 +552,7 @@ In Part 4, we introduce the 3-layer resource pattern—the architecture that mak
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 3 of 10** | Previous: [Your First Python Function](part-02-your-first-python-function.md) | Next: [The 3-Layer Resource Pattern](part-04-three-layer-resource-pattern.md)
+**Part 3 of 10** | Previous: [Your First Python Function](/blog/crossplane-python-blog-posts/part-02/) | Next: [The 3-Layer Resource Pattern](/blog/crossplane-python-blog-posts/part-04/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

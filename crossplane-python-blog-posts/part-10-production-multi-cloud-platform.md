@@ -887,7 +887,7 @@ The patterns in this series scale to any infrastructure your platform needs.
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 10 of 10** | Previous: [Importing Existing Infrastructure](part-09-importing-existing-infrastructure.md)
+**Part 10 of 10** | Previous: [Importing Existing Infrastructure](/blog/crossplane-python-blog-posts/part-09/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 
@@ -897,13 +897,13 @@ Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](ht
 
 ## Complete Series Index
 
-1. [Why Python for Crossplane Compositions?](part-01-why-python-for-crossplane.md)
-2. [Your First Python Composition Function](part-02-your-first-python-function.md)
-3. [Understanding Composition Function I/O](part-03-understanding-function-io.md)
-4. [The 3-Layer Resource Pattern](part-04-three-layer-resource-pattern.md)
-5. [Dynamic Provider Discovery](part-05-dynamic-provider-discovery.md)
-6. [Configuration Management with EnvironmentConfigs](part-06-environment-configs.md)
-7. [Templating Helm Releases with Jinja2](part-07-helm-templating-jinja2.md)
-8. [CI/CD Pipelines for Crossplane Functions](part-08-cicd-pipelines.md)
-9. [Importing Existing Infrastructure](part-09-importing-existing-infrastructure.md)
-10. [Building a Production Multi-Cloud Cluster Platform](part-10-production-multi-cloud-platform.md) *(this post)*
+1. [Why Python for Crossplane Compositions?](/blog/crossplane-python-blog-posts/part-01/)
+2. [Your First Python Composition Function](/blog/crossplane-python-blog-posts/part-02/)
+3. [Understanding Composition Function I/O](/blog/crossplane-python-blog-posts/part-03/)
+4. [The 3-Layer Resource Pattern](/blog/crossplane-python-blog-posts/part-04/)
+5. [Dynamic Provider Discovery](/blog/crossplane-python-blog-posts/part-05/)
+6. [Configuration Management with EnvironmentConfigs](/blog/crossplane-python-blog-posts/part-06/)
+7. [Templating Helm Releases with Jinja2](/blog/crossplane-python-blog-posts/part-07/)
+8. [CI/CD Pipelines for Crossplane Functions](/blog/crossplane-python-blog-posts/part-08/)
+9. [Importing Existing Infrastructure](/blog/crossplane-python-blog-posts/part-09/)
+10. [Building a Production Multi-Cloud Cluster Platform](/blog/crossplane-python-blog-posts/part-10/) *(this post)*

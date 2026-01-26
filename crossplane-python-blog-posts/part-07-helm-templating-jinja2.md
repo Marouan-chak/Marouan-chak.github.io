@@ -717,7 +717,7 @@ In Part 8, we'll build CI/CD pipelines for your composition functions—GitHub A
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 7 of 10** | Previous: [Configuration with EnvironmentConfigs](part-06-environment-configs.md) | Next: [CI/CD Pipelines](part-08-cicd-pipelines.md)
+**Part 7 of 10** | Previous: [Configuration with EnvironmentConfigs](/blog/crossplane-python-blog-posts/part-06/) | Next: [CI/CD Pipelines](/blog/crossplane-python-blog-posts/part-08/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 

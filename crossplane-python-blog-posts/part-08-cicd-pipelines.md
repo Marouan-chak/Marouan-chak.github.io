@@ -658,7 +658,7 @@ In Part 9, we'll explore importing existing infrastructure—how to adopt cloud 
 
 *Written by [Marouan Chakran](https://marouan.net), Senior SRE and Platform Engineer, building multi-cloud platforms with Crossplane and Python.*
 
-**Part 8 of 10** | Previous: [Helm Templating with Jinja2](part-07-helm-templating-jinja2.md) | Next: [Importing Existing Infrastructure](part-09-importing-existing-infrastructure.md)
+**Part 8 of 10** | Previous: [Helm Templating with Jinja2](/blog/crossplane-python-blog-posts/part-07/) | Next: [Importing Existing Infrastructure](/blog/crossplane-python-blog-posts/part-09/)
 
 Companion repository: [github.com/Marouan-chak/crossplane-python-blog-series](https://github.com/Marouan-chak/crossplane-python-blog-series)
 
