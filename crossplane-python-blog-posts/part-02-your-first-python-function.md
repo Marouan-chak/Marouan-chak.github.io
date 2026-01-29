@@ -356,7 +356,7 @@ spec:
 
 Your function created a Bucket resource from the composite resource spec.
 
-![Screenshot of crossplane beta render terminal output](/blog/crossplane-python-blog-posts/images/screenshots/part-02-render-output.png)
+![Screenshot of crossplane beta render terminal output](/blog/crossplane-python-blog-posts/images/screenshots/part-02-render-output.webp)
 
 ### View Function Logs
 
