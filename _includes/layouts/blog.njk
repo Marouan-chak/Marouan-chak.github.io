@@ -6,12 +6,11 @@
   <title>{{ title }} | {{ site.name }}</title>
   <meta name="description" content="{{ description | escape }}">
   <meta name="author" content="{{ site.author }}">
-  <meta name="theme-color" content="#0b0e14">
+  <meta name="theme-color" content="#0a0b0d">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="stylesheet" href="/blog/assets/blog.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="{{ title | escape }}">
@@ -49,18 +48,24 @@
   {% endif %}
 </head>
 <body>
-  <header class="site-header">
-    <div class="container inner">
-      <a class="site-logo" href="/">marouan.net</a>
-      <nav class="site-nav">
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="{{ site.social.github }}">GitHub</a>
-      </nav>
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">marouan<span>.net</span></a>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="/#problems">Approach</a></li>
+        <li><a href="/#work">Case Studies</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#experience">Log</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        ☰
+      </button>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
+  <main class="container" style="padding-top: var(--space-4);">
     <section class="hero">
       <div class="kicker">{{ series_title }}</div>
       <h1>{{ title }}</h1>
@@ -88,22 +93,46 @@
       {% if index != -1 %}
       <div class="series-nav">
         {% if index > 0 %}
-        <a class="series-card" href="{{ series[index - 1].url }}">
-          <span>Previous</span>
+        <a class="series-card prev" href="{{ series[index - 1].url }}">
+          <span>Previous / Part {{ series[index - 1].data.part }}</span>
           <strong>{{ series[index - 1].data.title }}</strong>
         </a>
+        {% else %}
+        <div></div>
         {% endif %}
         {% if index + 1 < series.length %}
-        <a class="series-card" href="{{ series[index + 1].url }}">
-          <span>Next</span>
+        <a class="series-card next" href="{{ series[index + 1].url }}">
+          <span>Next / Part {{ series[index + 1].data.part }}</span>
           <strong>{{ series[index + 1].data.title }}</strong>
         </a>
         {% endif %}
       </div>
       {% endif %}
     </article>
-
-    <div class="footer">© {{ site.name }}</div>
   </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span class="copyright-year">2026</span> marouan.net. platform systems for cloud native teams.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const nav = document.querySelector('nav');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        navToggle.textContent = isOpen ? '✕' : '☰';
+      });
+    }
+
+    // Set dynamic year
+    document.querySelector('.copyright-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

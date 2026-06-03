@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marouan Chakran | Platform Engineering Consultant</title>
-    <meta name="description" content="Platform engineering consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
+    <title>Freelance SRE & DevOps Consultant | Marouan Chakran</title>
+    <meta name="description" content="Freelance SRE & DevOps consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal developer platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
     <meta name="author" content="Marouan Chakran">
-    <meta name="theme-color" content="#0a0a0f">
+    <meta name="theme-color" content="#0a0b0d">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://marouan.net">
@@ -14,15 +14,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marouan.net">
-    <meta property="og:title" content="Marouan Chakran | Platform Engineering Consultant">
-    <meta property="og:description" content="Platform engineering consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
+    <meta property="og:title" content="Freelance SRE & DevOps Consultant | Marouan Chakran">
+    <meta property="og:description" content="Freelance SRE & DevOps consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal developer platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
     <meta property="og:image" content="https://marouan.net/assets/og-image.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://marouan.net">
-    <meta name="twitter:title" content="Marouan Chakran | Platform Engineering Consultant">
-    <meta name="twitter:description" content="Platform engineering consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
+    <meta name="twitter:title" content="Freelance SRE & DevOps Consultant | Marouan Chakran">
+    <meta name="twitter:description" content="Freelance SRE & DevOps consultant specializing in Kubernetes, Crossplane, and SRE. I help teams build reliable internal developer platforms, improve delivery workflows, and strengthen observability. Remote, worldwide.">
     <meta name="twitter:image" content="https://marouan.net/assets/og-image.png">
     
     <!-- Structured Data for SEO -->
@@ -34,8 +34,8 @@
         "url": "https://marouan.net",
         "email": "contact@marouan.net",
         "image": "https://marouan.net/assets/og-image.png",
-        "jobTitle": "Platform Engineering Consultant",
-        "description": "Platform engineering consultant specializing in Kubernetes, Crossplane, GitOps, and SRE practices. Helping teams build reliable internal platforms and improve delivery workflows.",
+        "jobTitle": "Freelance SRE, DevOps & Platform Consultant",
+        "description": "Freelance SRE & DevOps consultant specializing in Kubernetes, Crossplane, and SRE. Helping teams build reliable internal developer platforms and improve delivery workflows.",
         "knowsAbout": [
             "Kubernetes",
             "Crossplane",
@@ -44,10 +44,10 @@
             "GitOps",
             "Cloud Native",
             "Infrastructure as Code"
-        ],
         "sameAs": [
             "https://github.com/Marouan-chak",
-            "https://www.linkedin.com/in/marouan-chakran"
+            "https://www.linkedin.com/in/marouan-chakran",
+            "https://x.com/marouan_eth"
         ],
         "alumniOf": {
             "@type": "CollegeOrUniversity",
@@ -66,1803 +66,33 @@
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="manifest" href="site.webmanifest">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="9c455a07-2f60-4e14-83a7-c00ec60369a7"></script>
-    <style>
-        :root {
-            /* === UNIFIED DESIGN TOKENS === */
-
-            /* Background Scale - Dark to Light */
-            --bg-primary: #06080d;
-            --bg-secondary: #0c1017;
-            --bg-tertiary: #141922;
-            --bg-elevated: #1a202e;
-
-            /* Accent Colors - Vibrant & Modern */
-            --accent-cyan: #00d4ff;
-            --accent-purple: #8b5cf6;
-            --accent-green: #22c55e;
-            --accent-orange: #f59e0b;
-            --accent-pink: #ec4899;
-
-            /* Text Scale */
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --text-muted: #64748b;
-
-            /* Borders & Lines */
-            --border-color: rgba(148, 163, 184, 0.12);
-            --border-hover: rgba(0, 212, 255, 0.3);
-
-            /* Gradients */
-            --gradient-1: linear-gradient(135deg, #00d4ff 0%, #8b5cf6 100%);
-            --gradient-2: linear-gradient(135deg, #22c55e 0%, #00d4ff 100%);
-            --gradient-3: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-            --gradient-glow: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
-
-            /* Shadows - Elevation Scale */
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
-            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
-            --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.15);
-
-            /* Spacing Scale (4px base) */
-            --space-1: 4px;
-            --space-2: 8px;
-            --space-3: 12px;
-            --space-4: 16px;
-            --space-5: 20px;
-            --space-6: 24px;
-            --space-7: 28px;
-            --space-8: 32px;
-            --space-10: 40px;
-            --space-12: 48px;
-            --space-16: 64px;
-            --space-20: 80px;
-            --space-24: 96px;
-            --space-32: 128px;
-
-            /* Border Radius Scale */
-            --radius-sm: 6px;
-            --radius-md: 10px;
-            --radius-lg: 16px;
-            --radius-xl: 24px;
-            --radius-full: 9999px;
-
-            /* Transitions */
-            --transition-fast: 0.15s ease;
-            --transition-base: 0.25s ease;
-            --transition-slow: 0.4s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            color-scheme: dark;
-        }
-
-        body {
-            font-family: 'Outfit', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            overflow-x: hidden;
-            -webkit-tap-highlight-color: rgba(0, 212, 255, 0.15);
-        }
-
-        .skip-link {
-            position: absolute;
-            top: var(--space-3);
-            left: var(--space-3);
-            padding: var(--space-3) var(--space-4);
-            background: var(--accent-cyan);
-            color: var(--bg-primary);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: var(--radius-sm);
-            transform: translateY(-150%);
-            transition: transform var(--transition-fast);
-            z-index: 200;
-        }
-
-        .skip-link:focus {
-            transform: translateY(0);
-        }
-
-        /* Enhanced background with animated gradient orbs */
-        .grid-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image:
-                linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
-            background-size: 80px 80px;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        /* Gradient orbs for depth */
-        .grid-bg::before {
-            content: '';
-            position: absolute;
-            top: -20%;
-            left: -10%;
-            width: 60%;
-            height: 60%;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 60%);
-            filter: blur(60px);
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .grid-bg::after {
-            content: '';
-            position: absolute;
-            bottom: -20%;
-            right: -10%;
-            width: 50%;
-            height: 50%;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
-            filter: blur(60px);
-            animation: float 25s ease-in-out infinite reverse;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0); }
-            33% { transform: translate(30px, -30px); }
-            66% { transform: translate(-20px, 20px); }
-        }
-
-        .noise-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-            opacity: 0.025;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .container {
-            position: relative;
-            z-index: 2;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Navigation - Enhanced Glassmorphism */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            padding: var(--space-4) 0;
-            background: rgba(6, 8, 13, 0.85);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border-bottom: 1px solid var(--border-color);
-            transition: all var(--transition-base);
-        }
-
-        nav.scrolled {
-            padding: var(--space-3) 0;
-            background: rgba(6, 8, 13, 0.95);
-        }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-            transition: all var(--transition-fast);
-        }
-
-        .logo:hover {
-            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-        }
-
-        .logo::before {
-            content: '>';
-            opacity: 0.5;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 0.4; }
-            50% { opacity: 1; }
-        }
-
-        .nav-links {
-            display: flex;
-            gap: var(--space-8);
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.82rem;
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color var(--transition-fast);
-            position: relative;
-            padding: var(--space-2) 0;
-            touch-action: manipulation;
-        }
-
-        .nav-links a:hover {
-            color: var(--text-primary);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: var(--gradient-1);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--transition-base);
-        }
-
-        .nav-links a:hover::after {
-            transform: scaleX(1);
-        }
-
-        .nav-cta {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            padding: var(--space-3) var(--space-5);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            background: var(--gradient-1);
-            color: var(--bg-primary);
-            font-weight: 600;
-            transition: all var(--transition-base);
-            touch-action: manipulation;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
-        }
-
-        .nav-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0, 212, 255, 0.35);
-        }
-
-        .nav-toggle {
-            display: none;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border-radius: var(--radius-md);
-            border: 1px solid var(--border-color);
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-            cursor: pointer;
-            transition: all var(--transition-fast);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.1rem;
-            touch-action: manipulation;
-        }
-
-        .nav-toggle:hover {
-            border-color: var(--border-hover);
-            background: var(--bg-tertiary);
-        }
-
-        /* Hero Section - Enhanced */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: var(--space-20);
-            position: relative;
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-20);
-            align-items: center;
-        }
-
-        .hero-text {
-            animation: fadeInUp 0.8s ease forwards;
-            opacity: 0;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            background: rgba(34, 197, 94, 0.08);
-            border: 1px solid rgba(34, 197, 94, 0.2);
-            border-radius: var(--radius-full);
-            padding: var(--space-2) var(--space-4);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
-            color: var(--accent-green);
-            margin-bottom: var(--space-6);
-            transition: all var(--transition-base);
-        }
-
-        .hero-badge:hover {
-            background: rgba(34, 197, 94, 0.12);
-            border-color: rgba(34, 197, 94, 0.35);
-        }
-
-        .hero-badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--accent-green);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-            box-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.15); }
-        }
-
-        .hero h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(2.5rem, 5vw, 3.75rem);
-            font-weight: 700;
-            line-height: 1.08;
-            margin-bottom: var(--space-6);
-            text-wrap: balance;
-        }
-
-        .hero h1 .gradient-text {
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-name {
-            display: block;
-            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-            font-weight: 500;
-            color: var(--accent-cyan);
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            margin-bottom: var(--space-2);
-        }
-
-        .hero-tagline {
-            display: block;
-        }
-
-        .hero-description {
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-            margin-bottom: var(--space-8);
-            max-width: 480px;
-            line-height: 1.75;
-        }
-
-        .hero-highlights {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-3);
-            margin-bottom: var(--space-8);
-        }
-
-        .hero-highlight {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.72rem;
-            color: var(--text-muted);
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-full);
-            padding: var(--space-2) var(--space-4);
-            transition: all var(--transition-base);
-        }
-
-        .hero-highlight:hover {
-            border-color: var(--border-hover);
-            color: var(--text-secondary);
-            background: var(--bg-elevated);
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: var(--space-4);
-            flex-wrap: wrap;
-        }
-
-        /* Buttons - Unified */
-        .btn {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.88rem;
-            padding: var(--space-4) var(--space-6);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            transition: all var(--transition-base);
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            cursor: pointer;
-            font-weight: 500;
-        }
-
-        .btn-primary {
-            background: var(--gradient-1);
-            color: var(--bg-primary);
-            font-weight: 600;
-            border: none;
-            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.25);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 35px rgba(0, 212, 255, 0.4);
-        }
-
-        .btn-secondary {
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--border-hover);
-            background: var(--bg-tertiary);
-            transform: translateY(-2px);
-        }
-
-        /* Terminal Card - Enhanced */
-        .terminal-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            animation: fadeInUp 0.8s ease 0.2s forwards;
-            opacity: 0;
-            box-shadow: var(--shadow-lg);
-            position: relative;
-        }
-
-        .terminal-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: var(--gradient-1);
-            opacity: 0.5;
-        }
-
-        .terminal-header {
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-            padding: var(--space-3) var(--space-4);
-            background: var(--bg-tertiary);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .terminal-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .terminal-dot.red { background: #ff5f57; }
-        .terminal-dot.yellow { background: #febc2e; }
-        .terminal-dot.green { background: #28c840; }
-
-        .terminal-title {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.72rem;
-            color: var(--text-muted);
-            margin-left: var(--space-2);
-        }
-
-        .terminal-body {
-            padding: var(--space-6);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.82rem;
-            line-height: 1.85;
-        }
-
-        .terminal-line {
-            display: flex;
-            margin-bottom: var(--space-2);
-        }
-
-        .terminal-prompt {
-            color: var(--accent-cyan);
-            margin-right: var(--space-3);
-            user-select: none;
-        }
-
-        .terminal-cmd {
-            color: var(--text-secondary);
-        }
-
-        .terminal-output {
-            color: var(--text-muted);
-            padding-left: var(--space-6);
-        }
-
-        .terminal-key {
-            color: var(--accent-purple);
-        }
-
-        .terminal-value {
-            color: var(--accent-green);
-        }
-
-        .terminal-string {
-            color: var(--accent-orange);
-        }
-
-        /* Sections - Unified */
-        .section {
-            padding: var(--space-32) 0;
-            scroll-margin-top: var(--space-24);
-            position: relative;
-        }
-
-        .section-compact {
-            padding: var(--space-24) 0;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: var(--space-16);
-        }
-
-        .section-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            color: var(--accent-cyan);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: var(--space-4);
-            display: inline-block;
-        }
-
-        .section-title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(2rem, 4vw, 2.75rem);
-            font-weight: 700;
-            text-wrap: balance;
-            letter-spacing: -0.02em;
-        }
-
-        .section-intro {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-            max-width: 680px;
-            margin: 0 auto var(--space-6);
-            text-align: center;
-            line-height: 1.7;
-        }
-
-        /* Services Grid - Card-based Design */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: var(--space-6);
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .service-card {
-            position: relative;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-xl);
-            padding: var(--space-8);
-            transition: all var(--transition-base);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-4);
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--gradient-1);
-            opacity: 0;
-            transition: opacity var(--transition-base);
-        }
-
-        .service-card:hover {
-            transform: translateY(-6px);
-            border-color: var(--border-hover);
-            box-shadow: var(--shadow-md), var(--shadow-glow);
-        }
-
-        .service-card:hover::before {
-            opacity: 1;
-        }
-
-        .service-card:hover .service-icon {
-            transform: scale(1.05);
-            border-color: var(--border-hover);
-        }
-
-        /* Color variants for service cards */
-        .service-card[data-accent="cyan"] .service-icon {
-            background: rgba(0, 212, 255, 0.1);
-            color: var(--accent-cyan);
-        }
-        .service-card[data-accent="cyan"]:hover {
-            box-shadow: var(--shadow-md), 0 0 40px rgba(0, 212, 255, 0.12);
-        }
-
-        .service-card[data-accent="purple"] .service-icon {
-            background: rgba(139, 92, 246, 0.1);
-            color: var(--accent-purple);
-        }
-        .service-card[data-accent="purple"]::before {
-            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-        }
-        .service-card[data-accent="purple"]:hover {
-            box-shadow: var(--shadow-md), 0 0 40px rgba(139, 92, 246, 0.12);
-        }
-
-        .service-card[data-accent="green"] .service-icon {
-            background: rgba(34, 197, 94, 0.1);
-            color: var(--accent-green);
-        }
-        .service-card[data-accent="green"]::before {
-            background: var(--gradient-2);
-        }
-        .service-card[data-accent="green"]:hover {
-            box-shadow: var(--shadow-md), 0 0 40px rgba(34, 197, 94, 0.12);
-        }
-
-        .service-card[data-accent="orange"] .service-icon {
-            background: rgba(245, 158, 11, 0.1);
-            color: var(--accent-orange);
-        }
-        .service-card[data-accent="orange"]::before {
-            background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-        }
-        .service-card[data-accent="orange"]:hover {
-            box-shadow: var(--shadow-md), 0 0 40px rgba(245, 158, 11, 0.12);
-        }
-
-        .service-card[data-accent="pink"] .service-icon {
-            background: rgba(236, 72, 153, 0.1);
-            color: var(--accent-pink);
-        }
-        .service-card[data-accent="pink"]::before {
-            background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
-        }
-        .service-card[data-accent="pink"]:hover {
-            box-shadow: var(--shadow-md), 0 0 40px rgba(236, 72, 153, 0.12);
-        }
-
-        .service-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--border-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all var(--transition-base);
-        }
-
-        .service-icon svg {
-            width: 28px;
-            height: 28px;
-        }
-
-        .service-content h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: var(--space-2);
-        }
-
-        .service-content p {
-            color: var(--text-secondary);
-            font-size: 0.92rem;
-            line-height: 1.65;
-            margin: 0;
-        }
-
-        .service-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-2);
-            margin-top: auto;
-            padding-top: var(--space-4);
-        }
-
-        .service-tag {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.68rem;
-            padding: var(--space-1) var(--space-3);
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-sm);
-            color: var(--text-muted);
-            transition: all var(--transition-fast);
-        }
-
-        .service-card:hover .service-tag {
-            border-color: var(--border-hover);
-            color: var(--text-secondary);
-        }
-
-        @media (max-width: 900px) {
-            .services-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Work Cards - Enhanced */
-        .work-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: var(--space-6);
-        }
-
-        .work-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: var(--space-8);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .work-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-1);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--transition-slow);
-        }
-
-        .work-card:hover {
-            border-color: var(--border-hover);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .work-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .work-step {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--accent-cyan);
-            margin-bottom: var(--space-4);
-            transition: all var(--transition-base);
-        }
-
-        .work-card:hover .work-step {
-            background: rgba(0, 212, 255, 0.1);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
-        }
-
-        .work-card h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.15rem;
-            margin-bottom: var(--space-3);
-            font-weight: 600;
-        }
-
-        .work-card p {
-            color: var(--text-secondary);
-            font-size: 0.92rem;
-            line-height: 1.65;
-        }
-
-        /* Blog Cards - With Cover Images */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-6);
-        }
-
-        .blog-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-xl);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .blog-card:hover {
-            border-color: var(--border-hover);
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-lg), var(--shadow-glow);
-        }
-
-        .blog-card-image {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            overflow: hidden;
-            background: var(--bg-tertiary);
-        }
-
-        .blog-card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform var(--transition-slow);
-        }
-
-        .blog-card:hover .blog-card-image img {
-            transform: scale(1.05);
-        }
-
-        .blog-card-image::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(6, 8, 13, 0.8) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
-        .blog-card-badge {
-            position: absolute;
-            top: var(--space-4);
-            left: var(--space-4);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--bg-primary);
-            background: var(--gradient-1);
-            padding: var(--space-1) var(--space-3);
-            border-radius: var(--radius-sm);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            z-index: 2;
-        }
-
-        .blog-card-content {
-            padding: var(--space-6);
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .blog-card-content h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.15rem;
-            margin-bottom: var(--space-3);
-            font-weight: 600;
-            line-height: 1.35;
-            color: var(--text-primary);
-        }
-
-        .blog-card-content p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: var(--space-4);
-            line-height: 1.65;
-            flex-grow: 1;
-        }
-
-        .blog-card-link {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            transition: all var(--transition-fast);
-            margin-top: auto;
-        }
-
-        .blog-card-link:hover {
-            color: var(--text-primary);
-            gap: var(--space-3);
-        }
-
-        .blog-card-link svg {
-            width: 16px;
-            height: 16px;
-            transition: transform var(--transition-fast);
-        }
-
-        .blog-card:hover .blog-card-link svg {
-            transform: translateX(4px);
-        }
-
-        @media (max-width: 900px) {
-            .blog-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Skills Grid - Enhanced */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-6);
-        }
-
-        .skill-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: var(--space-8);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .skill-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-1);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--transition-slow);
-        }
-
-        .skill-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--border-hover);
-            box-shadow: var(--shadow-md);
-        }
-
-        .skill-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .skill-icon {
-            width: 52px;
-            height: 52px;
-            background: var(--gradient-glow);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: var(--space-5);
-            font-size: 1.5rem;
-            color: var(--accent-cyan);
-            transition: all var(--transition-base);
-        }
-
-        .skill-card:hover .skill-icon {
-            border-color: var(--border-hover);
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
-        }
-
-        .skill-card h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: var(--space-3);
-        }
-
-        .skill-card p {
-            color: var(--text-secondary);
-            font-size: 0.92rem;
-            line-height: 1.65;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-2);
-            margin-top: var(--space-4);
-        }
-
-        .skill-tag {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.68rem;
-            padding: var(--space-1) var(--space-3);
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-sm);
-            color: var(--text-muted);
-            transition: all var(--transition-fast);
-        }
-
-        .skill-tag:hover {
-            border-color: var(--border-hover);
-            color: var(--text-secondary);
-        }
-
-        /* Projects Section - Enhanced */
-        .projects-grid {
-            display: grid;
-            gap: var(--space-8);
-        }
-
-        .project-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-xl);
-            padding: var(--space-10);
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: var(--space-8);
-            align-items: center;
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: var(--gradient-1);
-            opacity: 0;
-            transition: opacity var(--transition-base);
-        }
-
-        .project-card:hover {
-            border-color: var(--border-hover);
-            transform: translateX(6px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .project-card:hover::before {
-            opacity: 1;
-        }
-
-        .project-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.72rem;
-            color: var(--accent-purple);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-3);
-        }
-
-        .project-card h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: var(--space-3);
-        }
-
-        .project-card p {
-            color: var(--text-secondary);
-            max-width: 580px;
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .project-links {
-            display: flex;
-            gap: var(--space-4);
-            margin-top: var(--space-5);
-        }
-
-        .project-link {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.82rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            transition: all var(--transition-base);
-            padding: var(--space-1) 0;
-        }
-
-        .project-link:hover {
-            color: var(--text-primary);
-            gap: var(--space-3);
-        }
-
-        .project-visual {
-            width: 100px;
-            height: 100px;
-            background: var(--gradient-glow);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: var(--accent-cyan);
-            position: relative;
-            overflow: hidden;
-            transition: all var(--transition-base);
-        }
-
-        .project-card:hover .project-visual {
-            border-color: var(--border-hover);
-            box-shadow: var(--shadow-glow);
-        }
-
-        /* Experience Section - Enhanced */
-        .experience-timeline {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .experience-timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-purple), var(--border-color));
-        }
-
-        .experience-item {
-            position: relative;
-            padding-left: var(--space-10);
-            padding-bottom: var(--space-12);
-        }
-
-        .experience-item:last-child {
-            padding-bottom: 0;
-        }
-
-        .experience-item::before {
-            content: '';
-            position: absolute;
-            left: -5px;
-            top: 6px;
-            width: 12px;
-            height: 12px;
-            background: var(--accent-cyan);
-            border-radius: 50%;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-            border: 2px solid var(--bg-primary);
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: var(--space-3);
-            margin-bottom: var(--space-3);
-        }
-
-        .experience-title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-
-        .experience-company {
-            color: var(--accent-cyan);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.88rem;
-        }
-
-        .experience-date {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-color);
-            padding: var(--space-1) var(--space-3);
-            border-radius: var(--radius-sm);
-        }
-
-        .experience-description {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: var(--space-4);
-            line-height: 1.7;
-        }
-
-        .experience-highlights {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-2);
-        }
-
-        .experience-highlights li {
-            position: relative;
-            padding-left: var(--space-5);
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        .experience-highlights li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 10px;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--accent-purple);
-        }
-
-        /* Education Card - Enhanced */
-        .education-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-xl);
-            padding: var(--space-10) var(--space-8);
-            text-align: center;
-            position: relative;
-            transition: all var(--transition-base);
-            overflow: hidden;
-        }
-
-        .education-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-2);
-            opacity: 0.5;
-        }
-
-        .education-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(34, 197, 94, 0.3);
-            box-shadow: var(--shadow-md);
-        }
-
-        .education-icon {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient-2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto var(--space-6);
-            box-shadow: 0 0 40px rgba(34, 197, 94, 0.25);
-        }
-
-        .education-icon svg {
-            width: 36px;
-            height: 36px;
-            color: var(--bg-primary);
-        }
-
-        .education-info h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.35rem;
-            font-weight: 600;
-            margin-bottom: var(--space-2);
-        }
-
-        .education-info p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .education-info .education-date {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.82rem;
-            color: var(--accent-green);
-            margin-top: var(--space-3);
-            display: block;
-        }
-
-        /* Certifications - Enhanced */
-        .certs-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--space-6);
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        .cert-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-xl);
-            padding: var(--space-10) var(--space-8);
-            text-align: center;
-            position: relative;
-            transition: all var(--transition-base);
-            overflow: hidden;
-        }
-
-        .cert-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-1);
-            opacity: 0.5;
-        }
-
-        .cert-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--border-hover);
-            box-shadow: var(--shadow-md);
-        }
-
-        .cert-badge {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient-1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto var(--space-6);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.1rem;
-            color: var(--bg-primary);
-            font-weight: 700;
-            box-shadow: 0 0 40px rgba(0, 212, 255, 0.25);
-        }
-
-        .cert-title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: var(--space-2);
-        }
-
-        .cert-issuer {
-            color: var(--text-secondary);
-            margin-bottom: var(--space-4);
-            font-size: 0.92rem;
-        }
-
-        .cert-link {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            transition: color var(--transition-fast);
-        }
-
-        .cert-link:hover {
-            color: var(--text-primary);
-        }
-
-        /* Contact Section - Enhanced */
-        .contact-section {
-            text-align: center;
-            padding: var(--space-32) 0;
-            position: relative;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-6);
-            margin-top: var(--space-10);
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            display: flex;
-            align-items: center;
-            gap: var(--space-3);
-            padding: var(--space-4) var(--space-6);
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            color: var(--text-primary);
-            text-decoration: none;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.88rem;
-            transition: all var(--transition-base);
-        }
-
-        .contact-link:hover {
-            border-color: var(--border-hover);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-sm), var(--shadow-glow);
-            background: var(--bg-tertiary);
-        }
-
-        .contact-link svg {
-            width: 20px;
-            height: 20px;
-            fill: currentColor;
-            opacity: 0.8;
-            transition: opacity var(--transition-fast);
-        }
-
-        .contact-link:hover svg {
-            opacity: 1;
-        }
-
-        /* Contact Form - Enhanced */
-        .contact-form {
-            max-width: 560px;
-            margin: var(--space-10) auto 0;
-            text-align: left;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-4);
-        }
-
-        .form-group {
-            margin-bottom: var(--space-5);
-        }
-
-        .form-group.full-width {
-            grid-column: 1 / -1;
-        }
-
-        .form-label {
-            display: block;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            margin-bottom: var(--space-2);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        .form-label .optional {
-            color: var(--text-muted);
-            font-size: 0.68rem;
-            text-transform: none;
-            letter-spacing: 0;
-        }
-
-        .form-input,
-        .form-select,
-        .form-textarea {
-            width: 100%;
-            padding: var(--space-4);
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            color: var(--text-primary);
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.95rem;
-            transition: all var(--transition-base);
-        }
-
-        .form-input:focus,
-        .form-select:focus,
-        .form-textarea:focus {
-            outline: none;
-            border-color: var(--accent-cyan);
-            box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.08);
-            background: var(--bg-tertiary);
-        }
-
-        .form-input::placeholder,
-        .form-textarea::placeholder {
-            color: var(--text-muted);
-        }
-
-        .form-select {
-            cursor: pointer;
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right var(--space-4) center;
-            padding-right: var(--space-10);
-        }
-
-        .form-select option {
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-        }
-
-        .form-textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        .form-submit {
-            width: 100%;
-            padding: var(--space-4) var(--space-8);
-            background: var(--gradient-1);
-            border: none;
-            border-radius: var(--radius-md);
-            color: var(--bg-primary);
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.92rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all var(--transition-base);
-            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.25);
-        }
-
-        .form-submit:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 35px rgba(0, 212, 255, 0.4);
-        }
-
-        .form-submit:active {
-            transform: translateY(0);
-        }
-
-        /* Honeypot spam protection - hidden field */
-        .form-honeypot {
-            position: absolute;
-            left: -9999px;
-        }
-
-        @media (max-width: 600px) {
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Footer - Enhanced */
-        footer {
-            padding: var(--space-10) 0;
-            text-align: center;
-            border-top: 1px solid var(--border-color);
-            background: var(--bg-secondary);
-        }
-
-        footer p {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.82rem;
-            color: var(--text-muted);
-        }
-
-        footer .copyright-year {
-            color: var(--accent-cyan);
-        }
-
-        /* Responsive - Enhanced */
-        @media (max-width: 900px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: var(--space-12);
-            }
-
-            .terminal-card {
-                order: -1;
-            }
-
-            .project-card {
-                grid-template-columns: 1fr;
-                padding: var(--space-8);
-            }
-
-            .project-visual {
-                display: none;
-            }
-
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 64px;
-                right: var(--space-6);
-                background: var(--bg-secondary);
-                border: 1px solid var(--border-color);
-                border-radius: var(--radius-lg);
-                padding: var(--space-4) var(--space-5);
-                flex-direction: column;
-                gap: var(--space-4);
-                min-width: 200px;
-                box-shadow: var(--shadow-lg);
-            }
-
-            nav.is-open .nav-links {
-                display: flex;
-            }
-
-            .nav-cta {
-                display: none;
-            }
-
-            .nav-toggle {
-                display: inline-flex;
-            }
-
-            .certs-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .work-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .section {
-                padding: var(--space-24) 0;
-            }
-
-            .section-compact {
-                padding: var(--space-16) 0;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .work-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                font-size: clamp(2rem, 8vw, 2.5rem);
-            }
-
-            .section-title {
-                font-size: clamp(1.75rem, 6vw, 2.25rem);
-            }
-
-            .services-list {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Focus States - Unified */
-        a:focus-visible,
-        button:focus-visible,
-        .btn:focus-visible,
-        .contact-link:focus-visible,
-        .project-link:focus-visible,
-        .nav-toggle:focus-visible {
-            outline: 2px solid var(--accent-cyan);
-            outline-offset: 3px;
-        }
-
-        /* Reduced Motion */
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-
-            .grid-bg::before,
-            .grid-bg::after {
-                animation: none;
-            }
-        }
-
-        /* Scrollbar - Enhanced */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--bg-primary);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--bg-elevated);
-            border-radius: var(--radius-sm);
-            border: 2px solid var(--bg-primary);
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--accent-cyan);
-        }
-
-        /* Selection */
-        ::selection {
-            background: rgba(0, 212, 255, 0.25);
-            color: var(--text-primary);
-        }
-    </style>
 </head>
 <body>
-    <div class="grid-bg"></div>
-    <div class="noise-overlay"></div>
     <a href="#main" class="skip-link">Skip to content</a>
+    
     <nav>
         <div class="container">
-            <a href="#main" class="logo">marouan.net</a>
+            <a href="/" class="logo">marouan<span>.net</span></a>
             <ul class="nav-links" id="site-nav">
+                <li><a href="#problems">Approach</a></li>
+                <li><a href="#work">Case Studies</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#how-i-work">How I work</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Log</a></li>
                 <li><a href="/blog/">Blog</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a class="nav-cta" href="#contact">Discuss a project</a>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
                 ☰
             </button>
@@ -1870,586 +100,506 @@
     </nav>
 
     <main id="main">
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-badge">Available for consulting</div>
-                    <h1>
-                        <span class="hero-name">Marouan Chakran</span>
-                        <span class="hero-tagline">Platform Engineering Consultant,<br><span class="gradient-text">Kubernetes, Crossplane, SRE</span></span>
-                    </h1>
-                    <p class="hero-description">
-                        I help teams adopt Kubernetes and cloud native platforms through platform engineering, Crossplane based infrastructure automation, GitOps workflows, and SRE practices. Remote, worldwide.
-                    </p>
-                    <div class="hero-highlights">
-                        <span class="hero-highlight">Remote, worldwide</span>
-                        <span class="hero-highlight">Kubernetes + Crossplane</span>
-                        <span class="hero-highlight">SRE and reliability</span>
-                    </div>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">
-                            Discuss a project
-                        </a>
-                        <a href="Marouan_Chakran_Resume.pdf" download class="btn btn-secondary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                            Download resume
-                        </a>
-                    </div>
-                </div>
-
-                <div class="terminal-card">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">marouan@consulting ~ kubectl whoami</span>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="terminal-line">
-                            <span class="terminal-prompt">$</span>
-                            <span class="terminal-cmd">cat /etc/engineer.yaml</span>
+        <!-- HERO SECTION -->
+        <section class="section hero" style="border-bottom: 1px solid var(--border-color); padding-top: var(--space-12);">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="status-indicator">
+                            <span class="status-dot pulse"></span>
+                            <span>available for freelance SRE & DevOps consulting</span>
                         </div>
-                        <div class="terminal-output">
-                            <span class="terminal-key">apiVersion:</span> <span class="terminal-string">engineer.io/v1</span><br>
-                            <span class="terminal-key">kind:</span> <span class="terminal-string">PlatformEngineer</span><br>
-                            <span class="terminal-key">metadata:</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">name:</span> <span class="terminal-value">marouan-chakran</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">location:</span> <span class="terminal-value">Remote, worldwide</span><br>
-                            <span class="terminal-key">spec:</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">role:</span> <span class="terminal-string">"Platform Engineering Consultant"</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">focus:</span> <span class="terminal-string">"Kubernetes, Crossplane, SRE"</span><br>
-                            &nbsp;&nbsp;<span class="terminal-key">status:</span> <span class="terminal-value">Ready</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-compact" id="services">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">// Services</div>
-                <h2 class="section-title">What I Can Help With</h2>
-            </div>
-
-            <p class="section-intro">Engagements typically focus on one of the following areas.</p>
-
-            <div class="services-grid">
-                <div class="service-card" data-accent="cyan">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Internal Developer Platforms</h3>
-                        <p>Design and build self-service platforms that reduce cognitive load and accelerate delivery for your engineering teams.</p>
-                    </div>
-                    <div class="service-tags">
-                        <span class="service-tag">Platform Engineering</span>
-                        <span class="service-tag">Golden Paths</span>
-                        <span class="service-tag">Self-Service</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-accent="purple">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                            <polyline points="2 17 12 22 22 17"></polyline>
-                            <polyline points="2 12 12 17 22 12"></polyline>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Crossplane Adoption</h3>
-                        <p>Implement Crossplane compositions, providers, and operating models for declarative infrastructure management at scale.</p>
-                    </div>
-                    <div class="service-tags">
-                        <span class="service-tag">Compositions</span>
-                        <span class="service-tag">Providers</span>
-                        <span class="service-tag">XRDs</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-accent="green">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Cloud Migration</h3>
-                        <p>Plan and execute bare metal to cloud migrations with minimal disruption, including architecture design and workload modernization.</p>
-                    </div>
-                    <div class="service-tags">
-                        <span class="service-tag">Multi-Cloud</span>
-                        <span class="service-tag">Architecture</span>
-                        <span class="service-tag">Lift & Shift</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-accent="orange">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Containerization</h3>
-                        <p>Modernize legacy applications with containers and establish cloud native delivery patterns, CI/CD pipelines, and runtime best practices.</p>
-                    </div>
-                    <div class="service-tags">
-                        <span class="service-tag">Docker</span>
-                        <span class="service-tag">CI/CD</span>
-                        <span class="service-tag">GitOps</span>
-                    </div>
-                </div>
-
-                <div class="service-card" data-accent="pink">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                        </svg>
-                    </div>
-                    <div class="service-content">
-                        <h3>Kubernetes & SRE</h3>
-                        <p>Kubernetes adoption, cluster design, security hardening, and reliability foundations with SLOs, observability, and incident readiness.</p>
-                    </div>
-                    <div class="service-tags">
-                        <span class="service-tag">K8s</span>
-                        <span class="service-tag">SRE</span>
-                        <span class="service-tag">Observability</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-compact" id="how-i-work">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">// Engagement Flow</div>
-                <h2 class="section-title">How I work</h2>
-            </div>
-            <div class="work-grid">
-                <div class="work-card">
-                    <div class="work-step">1</div>
-                    <h3>Discovery</h3>
-                    <p>Short call and review of current stack, constraints, and desired outcomes.</p>
-                </div>
-                <div class="work-card">
-                    <div class="work-step">2</div>
-                    <h3>Design</h3>
-                    <p>Target architecture, delivery roadmap, risks, and trade-offs aligned to your teams.</p>
-                </div>
-                <div class="work-card">
-                    <div class="work-step">3</div>
-                    <h3>Delivery</h3>
-                    <p>Implementation and productionization with documentation, runbooks, and handover prep.</p>
-                </div>
-                <div class="work-card">
-                    <div class="work-step">4</div>
-                    <h3>Enablement</h3>
-                    <p>Training, enablement, and next-step planning so teams can operate independently.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="experience">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">// Career Path</div>
-                <h2 class="section-title">Professional Experience</h2>
-            </div>
-
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Sr. Site Reliability Engineer</h3>
-                            <span class="experience-company">Instadeep LTD / BioNTech</span>
-                        </div>
-                        <span class="experience-date">Oct 2023 – Present</span>
-                    </div>
-                    <p class="experience-description">Internal Developer Platform architect focused on platform reliability, delivery workflows, and infrastructure automation.</p>
-                    <ul class="experience-highlights">
-                        <li>Designed and operated multi cloud Kubernetes foundations supporting multiple teams</li>
-                        <li>Standardized infrastructure and application delivery using GitOps workflows</li>
-                        <li>Built Crossplane abstractions to reduce cognitive load and improve consistency</li>
-                        <li>Delivered platform tooling to improve self-service and operational visibility</li>
-                        <li>Improved reliability through SLO oriented operations and incident readiness</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">DevOps Engineer</h3>
-                            <span class="experience-company">Blocs & Compagnie</span>
-                        </div>
-                        <span class="experience-date">May 2022 – Oct 2023</span>
-                    </div>
-                    <p class="experience-description">Built observability platforms and operated multi-cloud Kubernetes infrastructure for production workloads.</p>
-                    <ul class="experience-highlights">
-                        <li>Established metrics, logs, and traces platform with consistent dashboards and alerts</li>
-                        <li>Implemented secrets management workflows and access controls with Vault</li>
-                        <li>Operated Kubernetes delivery pipelines across cloud providers with CI/CD automation</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Kubernetes Expert & Technical Referent</h3>
-                            <span class="experience-company">Société Générale</span>
-                        </div>
-                        <span class="experience-date">Nov 2021 – May 2022</span>
-                    </div>
-                    <p class="experience-description">Technical referent for Kubernetes foundations supporting critical financial services.</p>
-                    <ul class="experience-highlights">
-                        <li>Maintained production Kubernetes platforms with reliability and governance focus</li>
-                        <li>Established incident response practices and on-call readiness routines</li>
-                        <li>Created runbooks and post-incident reviews to improve operational maturity</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Deployment Engineer</h3>
-                            <span class="experience-company">Sagemcom</span>
-                        </div>
-                        <span class="experience-date">Sep 2019 – Aug 2021</span>
-                    </div>
-                    <p class="experience-description">Led containerization initiatives and early GitOps adoption for legacy application modernization.</p>
-                    <ul class="experience-highlights">
-                        <li>Containerized legacy workloads and introduced modern delivery workflows</li>
-                        <li>Designed Helm packaging and GitOps release patterns with ArgoCD</li>
-                        <li>Managed on-prem infrastructure lifecycle and storage foundations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">// Featured Work</div>
-                <h2 class="section-title">Open Source & Personal Projects</h2>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-badge">⬡ Crossplane Provider</div>
-                        <h3>Provider MAAS</h3>
-                        <p>
-                            <strong>Problem:</strong> Bare-metal provisioning needed the same declarative workflows as cloud resources.<br>
-                            <strong>Approach:</strong> Built a Crossplane provider and compositions to expose MAAS resources as Kubernetes APIs.<br>
-                            <strong>Result:</strong> Consistent infrastructure requests and reusable abstractions for platform teams.
+                        
+                        <h1 class="hero-title">
+                            <span class="mono-label" style="font-size: 0.95rem; margin-bottom: var(--space-2);">Marouan Chakran | Freelance SRE & DevOps Consultant</span><br>
+                            I build the platform layer between cloud chaos and developer speed.
+                        </h1>
+                        
+                        <p class="hero-description">
+                            I help engineering teams turn fragile Kubernetes and cloud setups into reliable internal developer platforms. As a freelance SRE and DevOps consultant, I build custom platform systems for teams outgrowing scripts, tickets, and tribal knowledge.
                         </p>
-                        <div class="project-links">
-                            <a href="https://github.com/Marouan-chak/provider-upjet-maas" class="project-link" rel="noopener" target="_blank">
-                                View Provider MAAS on GitHub →
-                            </a>
+                        
+                        <div class="hero-keywords">
+                            <span>// focus :: Kubernetes, Crossplane, GitOps, SRE, Observability, IDPs</span>
+                        </div>
+                        
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary">Book a technical call</a>
+                            <a href="/Marouan_Chakran_Resume.pdf" download class="btn btn-secondary">Download resume</a>
                         </div>
                     </div>
-                    <div class="project-visual">⬡</div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-badge">◎ Internal Platform</div>
-                        <h3>Platform build blueprint</h3>
-                        <p>
-                            <strong>Problem:</strong> Teams needed self-service infrastructure with guardrails and consistent delivery.<br>
-                            <strong>Approach:</strong> Defined platform building blocks, GitOps governance, and Crossplane abstractions.<br>
-                            <strong>Result:</strong> Faster onboarding and repeatable platform patterns across environments.
-                        </p>
-                        <div class="project-links">
-                            <a href="#contact" class="project-link">
-                                Discuss a platform build →
-                            </a>
+                    <div class="hero-diagram">
+                        <div class="diagram-header">
+                            <div class="diagram-tabs">
+                                <button class="diagram-tab active" data-tab="yaml">platform.yaml</button>
+                                <button class="diagram-tab" data-tab="fix">what_i_fix.txt</button>
+                            </div>
+                            <span class="status-indicator" style="font-size: 0.65rem; padding-bottom: var(--space-2);"><span class="status-dot" style="box-shadow: none;"></span> active</span>
+                        </div>
+                        <div class="diagram-body">
+                            <div class="diagram-content active" id="diagram-yaml"><span class="highlight-green">kind</span>: TeamPlatform
+<span class="highlight-green">spec</span>:
+  <span class="highlight-green">appDelivery</span>:
+    <span class="highlight-green">path</span>: <span class="highlight-amber">git push to production</span>
+    <span class="highlight-green">guardrails</span>: <span class="highlight-amber">built in</span>
+    <span class="highlight-green">ownership</span>: <span class="highlight-amber">clear</span>
+
+  <span class="highlight-green">infrastructure</span>:
+    <span class="highlight-green">clusters</span>: <span class="highlight-amber">kubernetes</span>
+    <span class="highlight-green">cloud</span>: <span class="highlight-amber">gcp, aws, azure</span>
+    <span class="highlight-green">provisioning</span>: <span class="highlight-amber">crossplane</span>
+
+  <span class="highlight-green">operations</span>:
+    <span class="highlight-green">deploy</span>: <span class="highlight-amber">gitops</span>
+    <span class="highlight-green">observe</span>: <span class="highlight-amber">metrics, logs, traces</span>
+    <span class="highlight-green">secure</span>: <span class="highlight-amber">secrets, tls, identity</span>
+
+<span class="highlight-green">status</span>:
+  <span class="highlight-green">manualWork</span>: <span class="highlight-amber">reduced</span>
+  <span class="highlight-green">deliverySpeed</span>: <span class="highlight-amber">faster</span>
+  <span class="highlight-green">platformConfidence</span>: <span class="highlight-amber">higher</span></div>
+                            <div class="diagram-content" id="diagram-fix">I fix platforms that grew from:
+
+  <span class="highlight-amber">scripts</span>
+  <span class="highlight-amber">tickets</span>
+  <span class="highlight-amber">tribal knowledge</span>
+  <span class="highlight-amber">fragile clusters</span>
+  <span class="highlight-amber">cloud console changes</span>
+  <span class="highlight-amber">copy pasted Helm values</span>
+
+into:
+
+  <span class="highlight-green">platform APIs</span>
+  <span class="highlight-green">golden paths</span>
+  <span class="highlight-green">GitOps workflows</span>
+  <span class="highlight-green">reusable compositions</span>
+  <span class="highlight-green">observable services</span>
+  <span class="highlight-green">safer developer self service</span></div>
                         </div>
                     </div>
-                    <div class="project-visual">◎</div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-info">
-                        <div class="project-badge">📊 Observability</div>
-                        <h3>Multi tenant observability stack</h3>
-                        <p>
-                            <strong>Problem:</strong> Teams needed observability with isolation, secure access, and consistent SLOs.<br>
-                            <strong>Approach:</strong> Designed tenant-aware telemetry pipelines with strong identity and mTLS.<br>
-                            <strong>Result:</strong> Reliable dashboards, trusted telemetry, and clear operational ownership.
-                        </p>
-                        <div class="project-links">
-                            <a href="#contact" class="project-link">
-                                Discuss an observability roadmap →
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-visual">📊</div>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section section-compact" id="blog">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">// Latest Writing</div>
-                <h2 class="section-title">Crossplane Python Functions</h2>
-                <p class="section-intro">Newest posts from the series. Read the full series on the blog.</p>
-            </div>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-card-image">
-                        <span class="blog-card-badge">Part 10</span>
-                        <img src="/blog/crossplane-python-blog-posts/images/covers/part-10-cover.webp" alt="Building a Production Multi-Cloud Cluster Platform" loading="lazy">
+        <!-- PROOF / PROBLEM SECTION -->
+        <section class="section" id="problems">
+            <div class="container">
+                <div class="section-header-left">
+                    <div class="mono-label amber">// problem_spaces</div>
+                    <h2 class="section-title-large">Solving SRE & DevOps complexity for cloud native teams</h2>
+                </div>
+                
+                <div class="proof-container">
+                    <div class="proof-row">
+                        <div class="proof-problem">
+                            <span class="mono-label amber">01_friction</span>
+                            Your platform slows down teams
+                        </div>
+                        <div class="proof-remedy">
+                            Most platform problems are not Kubernetes problems. They are ownership, delivery, reliability, and abstraction problems. I design internal developer platforms that reduce repeated setup, unclear boundaries, and painful release paths.
+                        </div>
                     </div>
-                    <div class="blog-card-content">
+
+                    <div class="proof-row">
+                        <div class="proof-problem">
+                            <span class="mono-label amber">02_manual_ops</span>
+                            Your infrastructure is too manual
+                        </div>
+                        <div class="proof-remedy">
+                            Teams spend too much time managing clouds through consoles, manual scripts, or rigid Terraform setups. I build Crossplane based workflows that make infrastructure repeatable, reviewable, and safer under GitOps control.
+                        </div>
+                    </div>
+
+                    <div class="proof-row">
+                        <div class="proof-problem">
+                            <span class="mono-label amber">03_fragile_runtime</span>
+                            Kubernetes works, until it doesn't
+                        </div>
+                        <div class="proof-remedy">
+                            When scale hits or incidents occur, teams lack operational clarity. I help teams strengthen cluster reliability, configure production-grade observability stacks, establish service level objectives, and prepare runbooks.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK / CASE STUDIES SECTION -->
+        <section class="section" id="work">
+            <div class="container">
+                <div class="section-header-left">
+                    <div class="mono-label">// case_studies</div>
+                    <h2 class="section-title-large">Platform foundations in practice</h2>
+                </div>
+
+                <div class="case-grid">
+                    <div class="case-card">
+                        <span class="mono-label">system_compose</span>
+                        <h3>Crossplane Platform Foundations</h3>
+                        <p class="case-detail">
+                            Designed and built reusable infrastructure compositions for multi-cloud platform teams. Abstracted raw cloud assets into unified developer APIs.
+                        </p>
+                        <div class="case-meta">
+                            <span class="case-tag">#crossplane</span>
+                            <span class="case-tag">#xrd</span>
+                            <span class="case-tag">#control-plane</span>
+                        </div>
+                    </div>
+
+                    <div class="case-card">
+                        <span class="mono-label">delivery_model</span>
+                        <h3>GitOps Delivery Model</h3>
+                        <p class="case-detail">
+                            Standardized application and infrastructure delivery pipelines across multiple clusters using ArgoCD, Flux, Helm, and secure RBAC boundaries.
+                        </p>
+                        <div class="case-meta">
+                            <span class="case-tag">#gitops</span>
+                            <span class="case-tag">#argocd</span>
+                            <span class="case-tag">#flux</span>
+                            <span class="case-tag">#helm</span>
+                        </div>
+                    </div>
+
+                    <div class="case-card">
+                        <span class="mono-label">telemetry_stack</span>
+                        <h3>Observability & SRE Stack</h3>
+                        <p class="case-detail">
+                            Built metrics, logs, traces, custom dashboards, alert routing, and runbooks for core platforms to secure high-traffic production workloads.
+                        </p>
+                        <div class="case-meta">
+                            <span class="case-tag">#observability</span>
+                            <span class="case-tag">#prometheus</span>
+                            <span class="case-tag">#grafana</span>
+                            <span class="case-tag">#sre</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-header-left">
+                    <div class="mono-label">// core_services</div>
+                    <h2 class="section-title-large">SRE, DevOps & platform consulting services</h2>
+                </div>
+
+                <div class="services-list">
+                    <div class="service-card">
+                        <h3>1. Internal Developer Platforms</h3>
+                        <p>Designing self-service golden paths to reduce developer cognitive load and speed up cycle times securely.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>2. Crossplane Adoption</h3>
+                        <p>Building clean XRD compositions and cloud provider integrations to replace legacy manual scripts.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>3. Kubernetes Reliability</h3>
+                        <p>Hardening configurations, validating cluster security, tuning autoscalers, and optimizing runtimes.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>4. GitOps Delivery</h3>
+                        <p>Automating application updates and infrastructure reconciliations using ArgoCD or Flux workflows.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>5. Observability & SRE Foundations</h3>
+                        <p>Establishing clear SLOs, metrics dashboards, structured logging pipelines, and on-call alerting rules.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>6. Cloud Migration Planning</h3>
+                        <p>Mapping dependencies, defining hybrid target architectures, and planning low-downtime database migrations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / CAREER SECTION -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header-left">
+                    <div class="mono-label">// professional_log</div>
+                    <h2 class="section-title-large">Career history</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-title">Sr. Site Reliability Engineer</span>
+                                <span class="timeline-company">@ InstaDeep / BioNTech</span>
+                            </div>
+                            <span class="timeline-date">Oct 2023 - Present</span>
+                        </div>
+                        <p class="timeline-desc">Internal Developer Platform architect focused on cluster reliability, automated infrastructure delivery, and developer enablement.</p>
+                        <ul class="timeline-bullets">
+                            <li>Designed and operated multi-cloud Kubernetes clusters supporting machine learning research teams</li>
+                            <li>Standardized delivery pipelines across environments using declarative GitOps models</li>
+                            <li>Created Crossplane compositions to abstract cloud resources, reducing onboarding friction</li>
+                            <li>Improved site reliability through service level indicators, dashboard suites, and pager runbooks</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-title">DevOps Engineer</span>
+                                <span class="timeline-company">@ Blocs & Compagnie</span>
+                            </div>
+                            <span class="timeline-date">May 2022 - Oct 2023</span>
+                        </div>
+                        <p class="timeline-desc">Managed multi-cloud cluster systems and deployed centralized logging, tracing, and metric stacks.</p>
+                        <ul class="timeline-bullets">
+                            <li>Built unified observability platform covering multiple production applications</li>
+                            <li>Hardened access controls and secrets management processes using HashiCorp Vault</li>
+                            <li>Optimized container runtimes and automated build processes</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-title">Kubernetes Expert & Referent</span>
+                                <span class="timeline-company">@ Société Générale</span>
+                            </div>
+                            <span class="timeline-date">Nov 2021 - May 2022</span>
+                        </div>
+                        <p class="timeline-desc">Technical referent overseeing production Kubernetes foundations for financial services.</p>
+                        <ul class="timeline-bullets">
+                            <li>Maintained core cluster operations prioritizing security constraints and high availability</li>
+                            <li>Refined incident management workflows and on-call response expectations</li>
+                            <li>Documented post-incident reviews to strengthen operational processes</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-title">Deployment Engineer</span>
+                                <span class="timeline-company">@ Sagemcom</span>
+                            </div>
+                            <span class="timeline-date">Sep 2019 - Aug 2021</span>
+                        </div>
+                        <p class="timeline-desc">Led early containerization efforts and packaging models for legacy service migrations.</p>
+                        <ul class="timeline-bullets">
+                            <li>Packaged applications inside containers, replacing manual setup files</li>
+                            <li>Designed Helm packages and deployment triggers using ArgoCD</li>
+                            <li>Managed local physical servers, storage pools, and basic networking assets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WRITING / BLOG SECTION -->
+        <section class="section" id="blog">
+            <div class="container">
+                <div class="section-header-left">
+                    <div class="mono-label">// latest_writing</div>
+                    <h2 class="section-title-large">Crossplane Python Functions Series</h2>
+                </div>
+                
+                <div class="blog-card-grid">
+                    <article class="blog-item-card">
+                        <span class="mono-label">part_10_production</span>
                         <h3>Building a Production Multi-Cloud Cluster Platform</h3>
-                        <p>Putting the full platform together with everything learned in the series.</p>
-                        <a href="/blog/crossplane-python-blog-posts/part-10/" class="blog-card-link">
-                            Read article
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-card-image">
-                        <span class="blog-card-badge">Part 9</span>
-                        <img src="/blog/crossplane-python-blog-posts/images/covers/part-09-cover.webp" alt="Importing Existing Infrastructure" loading="lazy">
-                    </div>
-                    <div class="blog-card-content">
+                        <p>Evolving compositions into a unified, tested, and reliable production platform configuration.</p>
+                        <a href="/blog/crossplane-python-blog-posts/part-10/" class="link">Read part 10 →</a>
+                    </article>
+
+                    <article class="blog-item-card">
+                        <span class="mono-label">part_09_import</span>
                         <h3>Importing Existing Infrastructure</h3>
-                        <p>Bring in existing resources and evolve toward declarative management.</p>
-                        <a href="/blog/crossplane-python-blog-posts/part-09/" class="blog-card-link">
-                            Read article
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-card-image">
-                        <span class="blog-card-badge">Part 8</span>
-                        <img src="/blog/crossplane-python-blog-posts/images/covers/part-08-cover.webp" alt="Building CI/CD Pipelines for Functions" loading="lazy">
-                    </div>
-                    <div class="blog-card-content">
+                        <p>Evolving brownfield cloud resources securely into Crossplane declarative models.</p>
+                        <a href="/blog/crossplane-python-blog-posts/part-09/" class="link">Read part 9 →</a>
+                    </article>
+
+                    <article class="blog-item-card">
+                        <span class="mono-label">part_08_cicd</span>
                         <h3>Building CI/CD Pipelines for Functions</h3>
-                        <p>Automate testing and releases for Crossplane function development.</p>
-                        <a href="/blog/crossplane-python-blog-posts/part-08/" class="blog-card-link">
-                            Read article
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div style="text-align: center; margin-top: 28px;">
-                <a href="/blog/crossplane-python-blog-posts/" class="btn btn-secondary">View full series</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="certifications">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">// Credentials</div>
-                <h2 class="section-title">Certifications & Education</h2>
-            </div>
-
-            <div class="certs-grid">
-                <div class="cert-card">
-                    <div class="cert-badge">CKA</div>
-                    <h3 class="cert-title">Certified Kubernetes Administrator</h3>
-                    <p class="cert-issuer">The Linux Foundation / CNCF</p>
-                    <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">ID: LF-svrxqtbxri • Oct 2021</p>
-                    <a href="https://www.credly.com/badges/cka" class="cert-link" rel="noopener" target="_blank">Verify CKA on Credly →</a>
+                        <p>Automating tests, linting, packaging, and OCI image updates for custom compositions.</p>
+                        <a href="/blog/crossplane-python-blog-posts/part-08/" class="link">Read part 8 →</a>
+                    </article>
                 </div>
 
-                <div class="education-card">
-                    <div class="education-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l11 6l9-4.91V17h2V9L12 3zm0 2.18l6.4 3.49L12 12.02L5.6 8.67L12 5.18zM5 13.18v3.43l7 3.82l7-3.82v-3.43l-7 3.83l-7-3.83z"/></svg>
+                <div style="text-align: center; margin-top: var(--space-8);">
+                    <a href="/blog/crossplane-python-blog-posts/" class="btn btn-secondary">View full series</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & EDUCATION -->
+        <section class="section" id="certifications">
+            <div class="container">
+                <div class="section-header-left">
+                    <div class="mono-label">// credentials</div>
+                    <h2 class="section-title-large">Education & Certifications</h2>
+                </div>
+
+                <div class="credentials-grid">
+                    <div class="credential-card">
+                        <span class="mono-label">certification</span>
+                        <h3>Certified Kubernetes Administrator (CKA)</h3>
+                        <div class="org">Linux Foundation / CNCF</div>
+                        <div class="details">License: LF-svrxqtbxri • Oct 2021</div>
+                        <a href="https://www.credly.com/badges/cka" target="_blank" rel="noopener">Verify credential →</a>
                     </div>
-                    <div class="education-info">
-                        <h3>Computer Science Engineering</h3>
-                        <p>Sorbonne Paris-Nord</p>
-                        <span class="education-date">Sep 2017 – 2021</span>
+
+                    <div class="credential-card">
+                        <span class="mono-label">degree</span>
+                        <h3>Computer Science Engineering Degree</h3>
+                        <div class="org">Sorbonne Paris-Nord University</div>
+                        <div class="details">Sep 2017 - 2021</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="section-label">// Get in Touch</div>
-            <h2 class="section-title">Let's Build Together</h2>
-            <p style="color: var(--text-secondary); max-width: 500px; margin: 20px auto 0;">
-                Happy to discuss platform engineering, Crossplane adoption, or infrastructure reliability challenges.
-            </p>
-            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 8px;">Typical response: 1-2 business days</p>
+        <!-- CONTACT / INQUIRY SECTION -->
+        <section class="section" id="contact" style="border-bottom: none;">
+            <div class="container">
+                <div class="section-header-left">
+                    <div class="mono-label">// communications</div>
+                    <h2 class="section-title-large">Let's solve platform chaos</h2>
+                </div>
 
-            <form class="contact-form" action="https://formspree.io/f/xzdddpqp" method="POST">
-                <!-- Honeypot field for spam protection -->
-                <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off">
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Name</label>
-                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p class="contact-text">
+                            Reach out to discuss SRE consulting, DevOps freelancing, Crossplane compositions, or cluster stability audits. 
+                        </p>
+                        <p class="contact-text" style="color: var(--text-muted); font-size: 0.85rem;">
+                            Engagements are scoped on a consulting basis. Typical initial reply: 1-2 business days.
+                        </p>
+                        <div class="contact-channels">
+                            <a href="https://github.com/Marouan-chak" class="contact-channel" target="_blank" rel="noopener">github.com/Marouan-chak</a>
+                            <a href="https://www.linkedin.com/in/marouan-chakran" class="contact-channel" target="_blank" rel="noopener">linkedin.com/in/marouan-chakran</a>
+                            <a href="https://x.com/marouan_eth" class="contact-channel" target="_blank" rel="noopener">x.com/marouan_eth</a>
+                            <a href="/Marouan_Chakran_Resume.pdf" download class="contact-channel">download resume.pdf</a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="email">Work email</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
-                    </div>
+
+                    <form class="contact-form" action="https://formspree.io/f/xzdddpqp" method="POST">
+                        <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Work Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="company">Company</label>
+                                <input type="text" id="company" name="company" class="form-input" placeholder="Company name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="timezone">Time Zone</label>
+                                <input type="text" id="timezone" name="timezone" class="form-input" placeholder="e.g. CET, UTC+1, EST">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="service">Select Engagement Focus</label>
+                            <select id="service" name="service" class="form-select" required>
+                                <option value="" disabled selected>Select area...</option>
+                                <option value="Platform build">Internal Developer Platform design</option>
+                                <option value="Crossplane adoption">Crossplane adoption & composition</option>
+                                <option value="Bare metal to cloud migration">Bare metal to cloud migration</option>
+                                <option value="Containerization and cloud native adoption">Cloud native workflows & CI/CD</option>
+                                <option value="Kubernetes adoption">Kubernetes reliability & SRE</option>
+                                <option value="Other">Other consulting request</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Project Context</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your current stack, delivery friction, and goals..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="budget">Budget Scale <span class="optional">(optional)</span></label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="" disabled selected>Select scale...</option>
+                                <option value="< €5k">&lt; €5k</option>
+                                <option value="€5k - €10k">€5k - €10k</option>
+                                <option value="€10k - €25k">€10k - €25k</option>
+                                <option value="€25k - €50k">€25k - €50k</option>
+                                <option value="> €50k">&gt; €50k</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send inquiry</button>
+                    </form>
                 </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-label" for="company">Company</label>
-                        <input type="text" id="company" name="company" class="form-input" placeholder="Company name" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="timezone">Time zone</label>
-                        <input type="text" id="timezone" name="timezone" class="form-input" placeholder="e.g. CET, PST, UTC+2">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="service">What do you need?</label>
-                    <select id="service" name="service" class="form-select" required>
-                        <option value="" disabled selected>Select a service</option>
-                        <option value="Platform build">Platform build</option>
-                        <option value="Crossplane adoption">Crossplane adoption</option>
-                        <option value="Bare metal to cloud migration">Bare metal to cloud migration</option>
-                        <option value="Containerization and cloud native adoption">Containerization and cloud native adoption</option>
-                        <option value="Kubernetes adoption">Kubernetes adoption</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="message">Short message</label>
-                    <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project, current stack, and goals..." required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="budget">Budget range <span class="optional">(optional)</span></label>
-                    <select id="budget" name="budget" class="form-select">
-                        <option value="" disabled selected>Select a range</option>
-                        <option value="< €5k">&lt; €5k</option>
-                        <option value="€5k - €10k">€5k - €10k</option>
-                        <option value="€10k - €25k">€10k - €25k</option>
-                        <option value="€25k - €50k">€25k - €50k</option>
-                        <option value="> €50k">&gt; €50k</option>
-                        <option value="Not sure yet">Not sure yet</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="form-submit">Send inquiry</button>
-            </form>
-
-            <div class="contact-links" style="margin-top: 48px;">
-                <a href="https://github.com/Marouan-chak" class="contact-link" rel="noopener" target="_blank">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/marouan-chakran" class="contact-link" rel="noopener" target="_blank">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    LinkedIn
-                </a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>© <span class="copyright-year">2025</span> Marouan Chakran</p>
+            <p>© <span class="copyright-year">2026</span> marouan.net. platform systems for cloud native teams.</p>
         </div>
     </footer>
-    </main>
 
     <script>
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.project-card, .cert-card, .work-card, .education-card, .blog-card, .service-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(el);
-        });
-
-        // Navigation elements
+        // Mobile Navigation Toggle
         const nav = document.querySelector('nav');
         const navToggle = document.querySelector('.nav-toggle');
         const navLinks = document.querySelector('.nav-links');
 
-        // Nav scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.scrollY;
-            if (currentScroll > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-            lastScroll = currentScroll;
-        }, { passive: true });
-
-        // Mobile nav toggle
-        if (nav && navToggle && navLinks) {
+        if (navToggle && navLinks) {
             navToggle.addEventListener('click', () => {
                 const isOpen = nav.classList.toggle('is-open');
                 navToggle.setAttribute('aria-expanded', String(isOpen));
+                navToggle.textContent = isOpen ? '✕' : '☰';
             });
         }
 
-        // Smooth scroll for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    if (nav && navToggle && nav.classList.contains('is-open')) {
-                        nav.classList.remove('is-open');
-                        navToggle.setAttribute('aria-expanded', 'false');
-                    }
+        // Close mobile nav when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('is-open')) {
+                    nav.classList.remove('is-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.textContent = '☰';
                 }
             });
         });
 
-        // Dynamic copyright year
+        // Set dynamic year
         document.querySelector('.copyright-year').textContent = new Date().getFullYear();
+
+        // Diagram Tabs switching
+        const diagramTabs = document.querySelectorAll('.diagram-tab');
+        const diagramContents = document.querySelectorAll('.diagram-content');
+
+        if (diagramTabs.length > 0) {
+            diagramTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    diagramTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    diagramContents.forEach(c => c.classList.remove('active'));
+                    const targetId = `diagram-${tab.getAttribute('data-tab')}`;
+                    const targetContent = document.getElementById(targetId);
+                    if (targetContent) {
+                        targetContent.classList.add('active');
+                    }
+                });
+            });
+        }
     </script>
 </body>
 </html>

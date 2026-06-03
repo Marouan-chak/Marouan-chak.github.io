@@ -6,30 +6,33 @@
   <title>{{ title }} | {{ site.name }}</title>
   <meta name="description" content="{{ description | escape }}">
   <meta name="author" content="{{ site.author }}">
-  <meta name="theme-color" content="#06080d">
+  <meta name="theme-color" content="#0a0b0d">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="stylesheet" href="/blog/assets/blog.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container inner">
-      <a class="site-logo" href="/">marouan.net</a>
-      <nav class="site-nav">
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="{{ site.social.github }}">GitHub</a>
-      </nav>
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">marouan<span>.net</span></a>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="/#problems">Approach</a></li>
+        <li><a href="/#work">Case Studies</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#experience">Log</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        ☰
+      </button>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
+  <main class="container" style="padding-top: var(--space-4);">
     <section class="hero">
-      <div class="kicker">Series</div>
+      <div class="kicker">Series Index</div>
       <h1>{{ title }}</h1>
       <p>{{ description }}</p>
     </section>
@@ -45,6 +48,7 @@
           {% endif %}
         </div>
         <div class="listing-item-content">
+          <span class="mono-label">part_0{{ post.data.part }}</span>
           <h2>{{ post.data.title }}</h2>
           <p>{{ post.data.description }}</p>
           <a href="{{ post.url }}" class="listing-item-link">
@@ -55,8 +59,30 @@
       </article>
       {% endfor %}
     </section>
-
-    <div class="footer">© {{ site.name }}</div>
   </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span class="copyright-year">2026</span> marouan.net. platform systems for cloud native teams.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const nav = document.querySelector('nav');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        navToggle.textContent = isOpen ? '✕' : '☰';
+      });
+    }
+
+    // Set dynamic year
+    document.querySelector('.copyright-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
