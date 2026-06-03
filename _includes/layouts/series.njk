@@ -10,6 +10,9 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/blog/assets/blog.css">
 </head>
 <body>
@@ -48,7 +51,7 @@
           {% endif %}
         </div>
         <div class="listing-item-content">
-          <span class="mono-label">part_0{{ post.data.part }}</span>
+          <span class="mono-label">part_{{ "0" if post.data.part < 10 }}{{ post.data.part }}</span>
           <h2>{{ post.data.title }}</h2>
           <p>{{ post.data.description }}</p>
           <a href="{{ post.url }}" class="listing-item-link">
