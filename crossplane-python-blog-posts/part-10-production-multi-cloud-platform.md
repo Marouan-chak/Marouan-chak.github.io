@@ -849,7 +849,7 @@ EOF
 kubectl get cluster my-prod-cluster -w
 ```
 
-![Screenshot of cluster creation terminal output](/blog/crossplane-python-blog-posts/images/screenshots/part-10-cluster-creation.png)
+![Screenshot of cluster creation terminal output](/blog/crossplane-python-blog-posts/images/screenshots/part-10-cluster-creation.webp)
 
 ```bash
 # Check managed resources

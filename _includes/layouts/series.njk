@@ -8,12 +8,46 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="theme-color" content="#0a0b0d">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} Blog" href="{{ site.url }}/blog/rss.xml">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/blog/assets/blog.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }} | {{ site.name }}">
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/blog/crossplane-python-blog-posts/images/covers/part-01-cover.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | {{ site.name }}">
+  <meta name="twitter:description" content="{{ description | escape }}">
+  <meta name="twitter:image" content="{{ site.url }}/blog/crossplane-python-blog-posts/images/covers/part-01-cover.webp">
+
+  {% set series = collections.crossplanePythonSeries %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "{{ title }}",
+      "description": "{{ description | escape }}",
+      "url": "{{ site.url }}{{ page.url }}",
+      "numberOfItems": {{ series.length }},
+      "itemListElement": [
+        {% for post in series %}
+        {
+          "@type": "ListItem",
+          "position": {{ loop.index }},
+          "url": "{{ site.url }}{{ post.url }}",
+          "name": "{{ post.data.title | escape }}"
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+  </script>
 </head>
 <body>
   <nav>

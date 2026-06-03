@@ -639,7 +639,7 @@ Add to README.md:
 ![CI build status badge for function-myplatform](https://github.com/Marouan-chak/function-myplatform/workflows/CI/badge.svg)
 ```
 
-![Screenshot of GitHub Actions CI workflow run for function-myplatform](/blog/crossplane-python-blog-posts/images/screenshots/part-08-github-actions.png)
+![Screenshot of GitHub Actions CI workflow run for function-myplatform](/blog/crossplane-python-blog-posts/images/screenshots/part-08-github-actions.webp)
 
 ## Key Takeaways
 
