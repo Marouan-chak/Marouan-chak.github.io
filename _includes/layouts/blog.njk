@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/blog/assets/blog.css">
 
+  {% set postUrl %}{{ site.url }}{{ page.url }}{% endset %}
+
   <meta property="og:type" content="article">
   <meta property="og:title" content="{{ title | escape }}">
   <meta property="og:description" content="{{ description | escape }}">
@@ -43,29 +45,62 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ site.url }}{{ page.url }}"
+        "@id": {{ postUrl | jsonLd | safe }}
       },
-      "headline": "{{ title | escape }}",
-      "description": "{{ description | escape }}",
+      "headline": {{ title | jsonLd | safe }},
+      "description": {{ description | jsonLd | safe }},
       "author": {
         "@type": "Person",
-        "name": "{{ site.author }}",
-        "url": "{{ site.url }}"
+        "name": {{ site.author | jsonLd | safe }},
+        "url": {{ site.url | jsonLd | safe }}
       },
       "publisher": {
         "@type": "Person",
-        "name": "{{ site.author }}",
-        "url": "{{ site.url }}"
+        "name": {{ site.author | jsonLd | safe }},
+        "url": {{ site.url | jsonLd | safe }}
       },
-      "datePublished": "{{ page.date | dateIso }}",
-      "dateModified": "{{ page.date | dateIso }}",
-      "url": "{{ site.url }}{{ page.url }}"
+      "datePublished": {{ page.date | dateIso | jsonLd | safe }},
+      "dateModified": {{ page.date | dateIso | jsonLd | safe }},
+      "url": {{ postUrl | jsonLd | safe }}
       {% if cover_image %},
+      {% set coverImageUrl %}{{ site.url }}{{ cover_image }}{% endset %}
       "image": {
         "@type": "ImageObject",
-        "url": "{{ site.url }}{{ cover_image }}"
+        "url": {{ coverImageUrl | jsonLd | safe }}
       }
       {% endif %}
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://marouan.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://marouan.net/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Crossplane Python Functions",
+          "item": "https://marouan.net/blog/crossplane-python-blog-posts/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": {{ title | jsonLd | safe }},
+          "item": {{ postUrl | jsonLd | safe }}
+        }
+      ]
     }
   </script>
   {% endif %}

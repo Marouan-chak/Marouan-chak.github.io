@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/blog/assets/blog.css">
 
+  {% set pageUrl %}{{ site.url }}{{ page.url }}{% endset %}
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }} | {{ site.name }}">
   <meta property="og:description" content="{{ description | escape }}">
@@ -31,13 +33,13 @@
     {
       "@context": "https://schema.org",
       "@type": "Blog",
-      "name": "{{ site.name }} Blog",
-      "description": "{{ description | escape }}",
-      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ (site.name + " Blog") | jsonLd | safe }},
+      "description": {{ description | jsonLd | safe }},
+      "url": {{ pageUrl | jsonLd | safe }},
       "author": {
         "@type": "Person",
-        "name": "{{ site.author }}",
-        "url": "{{ site.url }}"
+        "name": {{ site.author | jsonLd | safe }},
+        "url": {{ site.url | jsonLd | safe }}
       }
     }
   </script>

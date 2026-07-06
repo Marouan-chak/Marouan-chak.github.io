@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/blog/assets/blog.css">
 
+  {% set pageUrl %}{{ site.url }}{{ page.url }}{% endset %}
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }} | {{ site.name }}">
   <meta property="og:description" content="{{ description | escape }}">
@@ -32,17 +34,18 @@
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "{{ title }}",
-      "description": "{{ description | escape }}",
-      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ title | jsonLd | safe }},
+      "description": {{ description | jsonLd | safe }},
+      "url": {{ pageUrl | jsonLd | safe }},
       "numberOfItems": {{ series.length }},
       "itemListElement": [
         {% for post in series %}
+        {% set postUrl %}{{ site.url }}{{ post.url }}{% endset %}
         {
           "@type": "ListItem",
           "position": {{ loop.index }},
-          "url": "{{ site.url }}{{ post.url }}",
-          "name": "{{ post.data.title | escape }}"
+          "url": {{ postUrl | jsonLd | safe }},
+          "name": {{ post.data.title | jsonLd | safe }}
         }{% if not loop.last %},{% endif %}
         {% endfor %}
       ]

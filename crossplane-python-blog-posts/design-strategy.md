@@ -1,3 +1,8 @@
+---
+permalink: false
+eleventyExcludeFromCollections: true
+---
+
 Here is a concrete, production ready cover and visuals plan for your full series, optimized for platform engineers, discoverability, and consistent brand identity.
 
 This is meant to be practical. You can hand this to a designer, or generate it yourself in Figma, Canva, or Excalidraw.

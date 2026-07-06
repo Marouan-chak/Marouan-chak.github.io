@@ -38,6 +38,10 @@ module.exports = function (eleventyConfig) {
     return date.toUTCString();
   });
 
+  eleventyConfig.addFilter("jsonLd", (value) => {
+    return JSON.stringify(value ?? "");
+  });
+
   eleventyConfig.addFilter("findIndexByUrl", (items, url) => {
     if (!Array.isArray(items)) return -1;
     return items.findIndex((item) => item.url === url);
